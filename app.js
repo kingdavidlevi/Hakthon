@@ -25,6 +25,7 @@ let smallDiv1 = document.getElementById('section1')
 let smallDiv = document.getElementById('section')
 
 
+
 hideArrow.addEventListener('click', () => {
   let sectionStyle = window.getComputedStyle(bigDiv1)
 
@@ -105,6 +106,7 @@ hideArrow.addEventListener('click', () => {
 
   if(Stylecmp1.display === 'none'){
     vmp1.style.display = 'block';
+    smallDiv1.style.height = '449px'
     vmp2.style.display = 'none';
     vmp3.style.display = 'none';
 
@@ -117,13 +119,7 @@ hideArrow.addEventListener('click', () => {
     cmp5.style.display = 'block';
 
 
-    if(Stylevmp1.display === 'block'){
-      console.log('start')
-      stylesection1.height = '50px'
-      console.log('stop')
-    }
   }
- 
  
 
 
@@ -149,6 +145,7 @@ hideArrow.addEventListener('click', () => {
 
   if(Stylecmp2.display === 'none'){
     vmp2.style.display = 'block';
+    smallDiv1.style.height = '449px'
     vmp3.style.display = 'none';
     vmp4.style.display = 'none';
     vmp5.style.display = 'none';
@@ -180,6 +177,7 @@ hideArrow.addEventListener('click', () => {
 
   if(Stylecmp3.display === 'none'){
     vmp3.style.display = 'block';
+    smallDiv1.style.height = '467px'
     vmp4.style.display = 'none';
     vmp5.style.display = 'none';
     vmp1.style.display = 'none';
@@ -213,6 +211,7 @@ hideArrow.addEventListener('click', () => {
 
   if(Stylecmp4.display === 'none'){
     vmp4.style.display = 'block';
+    smallDiv1.style.height = '467px'
     vmp3.style.display = 'none';
     vmp2.style.display = 'none';
     vmp5.style.display = 'none';
@@ -247,6 +246,7 @@ hideArrow.addEventListener('click', () => {
 
   if(Stylecmp5.display === 'none'){
     vmp5.style.display = 'block';
+    smallDiv1.style.height = '485px'
     vmp3.style.display = 'none';
     vmp2.style.display = 'none';
     vmp4.style.display = 'none';

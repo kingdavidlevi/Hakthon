@@ -20,6 +20,23 @@ body{
 
 
 
+#goodDiv1{
+    width: 24px;
+    height: 24px;
+    display: none;
+}
+
+#rotate-con1{
+width: 24px;
+height: 24px;
+}
+
+.rotateDiv1{
+    height: 121px;
+    gap: 8px;
+    width: 24px;
+}
+
 #rotate-1{
     animation: spin 0.5s linear  ;
     animation-delay: 1ms;
@@ -113,31 +130,102 @@ body{
 
 
 
+@keyframes spin {
+    0%{
+       transform: rotate(0deg);
+    }
+    100%{
+       transform: rotate(360deg);
+    }
+   }
+
+
+
+#vmpDot1{
+    width: 24px;
+    height: 24px;
+    display: none;
+}
+#vmpDot2{
+    width: 24px;
+    height: 24px;
+    display: none;
+}
+#vmpDot3{
+    width: 24px;
+    height: 24px;
+    display: none;
+}
+#vmpDot4{
+    width: 24px;
+    height: 24px;
+    display: none;
+}
+#vmpDot5{
+    width: 24px;
+    height: 24px;
+    display: none;
+}
+
+
+
 #rotateDiv1{
     width: 24px;
     height: 121px;
     gap: 8px;
 }
+#rotateDiv2{
+    width: 24px;
+    height: 121px;
+    gap: 8px;
+}
+
+#rotateDiv3{
+    width: 24px;
+    height: 139px;
+    gap: 8px;
+}
+#rotateDiv4{
+    width: 24px;
+    height: 139px;
+    gap: 8px;
+}
+
+#rotateDiv5{
+    width: 24px;
+    height: 157px;
+    gap: 8px;
+}
+
+
+
+
+
 
 #goodDiv1{
     width: 24px;
     height: 24px;
+    display: none;
 }
 #goodDiv2{
     width: 24px;
     height: 24px;
+    display: none;
 }
 #goodDiv3{
     width: 24px;
     height: 24px;
+    display: none;
 }
 #goodDiv4{
     width: 24px;
     height: 24px;
+    display: none;
 }
 #goodDiv5{
     width: 24px;
     height: 24px;
+    display: none;
 }
 
 #good1{
@@ -161,16 +249,28 @@ body{
     left: 2px;
 }
 
+.dd1{
+    top: 2px;
+    left: 2px;
+}
+.dd2{
+    top: 2px;
+    left: 2px;
+}
+.dd3{
+    top: 2px;
+    left: 2px;
+}
+.dd4{
+    top: 2px;
+    left: 2px;
+}
+.dd5{
+    top: 2px;
+    left: 2px;
+}
 
 
-@keyframes spin {
-    0%{
-       transform: rotate(0deg);
-    }
-    100%{
-       transform: rotate(360deg);
-    }
-   }
 
 
 .link{
@@ -182,12 +282,40 @@ body{
     text-decoration: none;
 }
 
-.customize-div{
+.customize-1{
     width: 326px;
-    height: 22px;
+    height: 121px;
     padding: 2px 0px 2px 0px;
     gap: 16px;
-    margin-top: 1px;
+    
+}
+.customize-div2{
+    width: 326px;
+    height: 121px;
+    padding: 2px 0px 2px 0px;
+    gap: 16px;
+    
+}
+.customize-div3{
+    width: 326px;
+    height: 139px;
+    padding: 2px 0px 2px 0px;
+    gap: 16px;
+    
+}
+.customize-div4{
+    width: 326px;
+    height: 139px;
+    padding: 2px 0px 2px 0px;
+    gap: 16px;
+    
+}
+.customize-div5{
+    width: 326px;
+    height: 157px;
+    padding: 2px 0px 2px 0px;
+    gap: 16px;
+    
 }
 
 .Header-container{
@@ -601,6 +729,19 @@ line-height: 19.6px;
    
     
 }
+#vmp3{
+    
+    width: 374px;
+    height: 159px;
+    gap:96px;    
+    border-radius: 10px;
+    padding: 8px 8px 12px 8px;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    display: none;
+   
+}
+
 
 
 #vmp2{
@@ -616,17 +757,7 @@ line-height: 19.6px;
 }
 
 
-#vmp3{
-    
-    width: 374px;
-    height: 159px;
-    gap:96px;    
-    border-radius: 10px;
-    padding: 8px 8px 12px 8px;
-    background-color: #f3f3f3;
-    border-radius: 10px;
-    display: none;
-}
+
 
 #vmp4{
     
@@ -669,20 +800,21 @@ line-height: 19.6px;
 }
 #vmp3Con{
     display: flex;
+    height:139px;
     width: 358px;
-    height: 121px;
     gap: 8px;
+   
 }
 #vmp4Con{
     display: flex;
     width: 358px;
-    height: 121px;
+    height: 139px;
     gap: 8px;
 }
 #vmp5Con{
     display: flex;
     width: 358px;
-    height: 145px;
+    height: 157px;
     gap: 8px;
 }
 
@@ -751,6 +883,8 @@ line-height: 19.6px;
     
     
 }
+
+
 #cmp2{
     display: block;
     width: 374px;
@@ -950,6 +1084,8 @@ display: flex;
     height: 24px;
     gap: 8px;
 }
+
+
 
 }
 
