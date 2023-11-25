@@ -1,14 +1,16 @@
-let section = document.getElementById('section') 
-let section1 = document.getElementById('section1')
+let section = document.getElementById('bigDiv') 
+let section1 = document.getElementById('bigDiv1')
 let hideArrow = document.getElementById('arrow1')
 let arrow = document.getElementById('arrow')
-let cancel = document.getElementById('Extend-cancel')
-let cancelContainer = document.getElementById('Extend-container')
-let dot1 = document.getElementById('dot1')
-let dot2 = document.getElementById('dot2')
-let dot3 = document.getElementById('dot3')
-let dot4 = document.getElementById('dot4')
-let dot5 = document.getElementById('dot5')
+let cancel = document.getElementById('div-cancel')
+let cancel1 = document.getElementById('div-cancel1')
+let div = document.getElementById('ExtendContainer') 
+let div1 = document.getElementById('ExtendContainer1') 
+let dotsmall1 = document.getElementById('dotsmall1')
+let dotsmall2 = document.getElementById('dotsmall2')
+let dotsmall3 = document.getElementById('dotsmall3')
+let dotsmall4 = document.getElementById('dotsmall4')
+let dotsmall5 = document.getElementById('dotsmall5')
 let cmp1 = document.getElementById('cmp1')
 let cmp2 = document.getElementById('cmp2')
 let cmp3 = document.getElementById('cmp3')
@@ -19,53 +21,82 @@ let vmp2 = document.getElementById('vmp2')
 let vmp3 = document.getElementById('vmp3')
 let vmp4 = document.getElementById('vmp4')
 let vmp5 = document.getElementById('vmp5')
+let smallDiv1 = document.getElementById('section1')
+let smallDiv = document.getElementById('section')
+
 
 hideArrow.addEventListener('click', () => {
-  let sectionStyle = window.getComputedStyle(section1)
+  let sectionStyle = window.getComputedStyle(bigDiv1)
 
     if (sectionStyle.display === 'block'){
-        section1.style.display = 'none'
+        bigDiv1.style.display = 'none'
     }
 
     if(sectionStyle.display === 'none'){
-      section.style.display = 'block'
+      bigDiv.style.display = 'block'
      }
 
 })
 
+ 
+
 
  arrow.addEventListener('click', () => {
-    let sectionStyle = window.getComputedStyle(section)
+    let sectionStyle = window.getComputedStyle(bigDiv)
 
 
     if (sectionStyle.display === 'block'){
-        section.style.display = 'none'
+        bigDiv.style.display = 'none'
     }
 
    if(sectionStyle.display === 'none'){
-    section1.style.display = 'block'
-  
+    bigDiv1.style.display = 'block'
+     
    }
 
  })
  
 
- cancel.addEventListener('click', () => {
-  let container = window.getComputedStyle(cancelContainer)
+ cancel.addEventListener('click',() => {
+  let ddd = window.getComputedStyle(ExtendContainer)
+  let ddd1 = window.getComputedStyle(ExtendContainer1)
 
-if (container.display === 'block' ){
-  
-  cancelContainer.style.display = 'none'
-}
+  if (ddd.display === 'block'){
+    div.style.display = 'none'
+   
 
-})
+  }
+
+  if (ddd1.display === 'block'){
+    div1.style.display = 'none'
+  }
+
+ })
+ 
+
+ cancel1.addEventListener('click',() => {
+  let ddd = window.getComputedStyle(ExtendContainer)
+  let ddd1 = window.getComputedStyle(ExtendContainer1)
+
+  if (ddd1.display === 'block'){
+    div1.style.display = 'none'
+   
+
+  }
+
+  if (ddd.display === 'block'){
+    div.style.display = 'none'
+  }
+
+ })
+ 
 
 
 
-
- dot1.addEventListener('click', () => {
+ dotsmall1.addEventListener('click', () => {
   let Stylecmp1 = window.getComputedStyle(cmp1)
   let Stylevmp1 = window.getComputedStyle(vmp1)
+  let stylesection1 = window.getComputedStyle(section1)
 
   if(Stylecmp1.display === 'block'){
     cmp1.style.display = 'none'
@@ -73,21 +104,26 @@ if (container.display === 'block' ){
   }
 
   if(Stylecmp1.display === 'none'){
-    vmp1.style.display = 'flex'
-    vmp2.style.display = 'none'
-    vmp3.style.display = 'none'
-    vmp4.style.display = 'none'
-    vmp5.style.display = 'none'
+    vmp1.style.display = 'block';
+    vmp2.style.display = 'none';
+    vmp3.style.display = 'none';
 
-    cmp2.style.display = 'block'
-    cmp3.style.display = 'block'
-    cmp4.style.display = 'block'
-    cmp5.style.display = 'block'
+    vmp4.style.display = 'none';
+    vmp5.style.display = 'none';
+
+    cmp2.style.display = 'block';
+    cmp3.style.display = 'block';
+    cmp4.style.display = 'block';
+    cmp5.style.display = 'block';
 
 
-
+    if(Stylevmp1.display === 'block'){
+      console.log('start')
+      stylesection1.height = '50px'
+      console.log('stop')
+    }
   }
-
+ 
  
 
 
@@ -98,7 +134,11 @@ if (container.display === 'block' ){
 
 
 
- dot2.addEventListener('click', () => {
+
+
+
+
+ dotsmall2.addEventListener('click', () => {
   let Stylecmp2 = window.getComputedStyle(cmp2)
   let Stylevmp2 = window.getComputedStyle(vmp2)
   
@@ -108,17 +148,17 @@ if (container.display === 'block' ){
   }
 
   if(Stylecmp2.display === 'none'){
-    vmp2.style.display = 'flex'
-    vmp3.style.display = 'none'
-    vmp4.style.display = 'none'
-    vmp5.style.display = 'none'
-    vmp1.style.display = 'none'
+    vmp2.style.display = 'block';
+    vmp3.style.display = 'none';
+    vmp4.style.display = 'none';
+    vmp5.style.display = 'none';
+    vmp1.style.display = 'none';
 
 
-    cmp1.style.display = 'block'
-    cmp3.style.display = 'block'
-    cmp4.style.display = 'block'
-    cmp5.style.display = 'block'
+    cmp1.style.display = 'block';
+    cmp3.style.display = 'block';
+    cmp4.style.display = 'block';
+    cmp5.style.display = 'block';
 
   }
 
@@ -129,7 +169,7 @@ if (container.display === 'block' ){
 
 
 
- dot3.addEventListener('click', () => {
+ dotsmall3.addEventListener('click', () => {
   let Stylecmp3 = window.getComputedStyle(cmp3)
   let Stylevmp3 = window.getComputedStyle(vmp3)
   
@@ -139,18 +179,18 @@ if (container.display === 'block' ){
   }
 
   if(Stylecmp3.display === 'none'){
-    vmp3.style.display = 'flex'
-    vmp4.style.display = 'none'
-    vmp5.style.display = 'none'
-    vmp1.style.display = 'none'
-    vmp2.style.display = 'none'
+    vmp3.style.display = 'block';
+    vmp4.style.display = 'none';
+    vmp5.style.display = 'none';
+    vmp1.style.display = 'none';
+    vmp2.style.display = 'none';
 
 
    
-    cmp1.style.display = 'block'
-    cmp2.style.display = 'block'
-    cmp4.style.display = 'block'
-    cmp5.style.display = 'block'
+    cmp1.style.display = 'block';
+    cmp2.style.display = 'block';
+    cmp4.style.display = 'block';
+    cmp5.style.display = 'block';
   }
 
 
@@ -162,7 +202,7 @@ if (container.display === 'block' ){
 
 
 
- dot4.addEventListener('click', () => {
+ dotsmall4.addEventListener('click', () => {
   let Stylecmp4 = window.getComputedStyle(cmp4)
   let Stylevmp4 = window.getComputedStyle(vmp4)
   
@@ -172,18 +212,18 @@ if (container.display === 'block' ){
   }
 
   if(Stylecmp4.display === 'none'){
-    vmp4.style.display = 'flex'
-    vmp3.style.display = 'none'
-    vmp2.style.display = 'none'
-    vmp5.style.display = 'none'
-    vmp1.style.display = 'none'
+    vmp4.style.display = 'block';
+    vmp3.style.display = 'none';
+    vmp2.style.display = 'none';
+    vmp5.style.display = 'none';
+    vmp1.style.display = 'none';
 
 
       
-    cmp1.style.display = 'block'
-    cmp2.style.display = 'block'
-    cmp3.style.display = 'block'
-    cmp5.style.display = 'block'
+    cmp1.style.display = 'block';
+    cmp2.style.display = 'block';
+    cmp3.style.display = 'block';
+    cmp5.style.display = 'block';
 
   }
 
@@ -196,7 +236,7 @@ if (container.display === 'block' ){
 
 
 
- dot5.addEventListener('click', () => {
+ dotsmall5.addEventListener('click', () => {
   let Stylecmp5 = window.getComputedStyle(cmp5)
   let Stylevmp5 = window.getComputedStyle(vmp5)
   
@@ -206,17 +246,19 @@ if (container.display === 'block' ){
   }
 
   if(Stylecmp5.display === 'none'){
-    vmp5.style.display = 'flex'
-    vmp3.style.display = 'none'
-    vmp2.style.display = 'none'
-    vmp4.style.display = 'none'
-    vmp1.style.display = 'none'
+    vmp5.style.display = 'block';
+    vmp3.style.display = 'none';
+    vmp2.style.display = 'none';
+    vmp4.style.display = 'none';
+    vmp1.style.display = 'none';
 
 
-    cmp1.style.display = 'block'
-    cmp2.style.display = 'block'
-    cmp3.style.display = 'block'
-    cmp4.style.display = 'block'
+    cmp1.style.display = 'block';
+    cmp2.style.display = 'block';
+    cmp3.style.display = 'block';
+    cmp4.style.display = 'block';
+
+
 
   }
 
