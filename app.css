@@ -29,6 +29,7 @@ body{
 #rotate-con1{
 width: 24px;
 height: 24px;
+display: none;
 }
 
 .rotateDiv1{
@@ -38,8 +39,7 @@ height: 24px;
 }
 
 #rotate-1{
-    animation: spin 0.5s linear  ;
-    animation-delay: 1ms;
+    animation: spin 0.3s linear  ;
     left: 2px;
     top: 2px;
     
@@ -59,7 +59,7 @@ height: 24px;
 
    
 #rotate-2{
-    animation: spin 0.5s linear;
+    animation: spin 0.2s linear;
     animation-delay: 1ms; 
     left: 3px;
     top: 2px;
@@ -78,7 +78,7 @@ height: 24px;
 
 
 #rotate-3{
-    animation: spin 0.5s linear;
+    animation: spin 0.2s linear;
     animation-delay: 1ms;
     
     left: 2px;
@@ -98,7 +98,7 @@ height: 24px;
 
 
 #rotate-4{
-    animation: spin 0.5s linear;
+    animation: spin 0.2s linear;
     animation-delay: 1ms;
     
     left: 2px;
@@ -120,7 +120,7 @@ height: 24px;
 
    
 #rotate-5{
-    animation: spin 0.5s linear;
+    animation: spin 0.2s linear;
     animation-delay: 1ms;
     
     left: -0px;
@@ -144,7 +144,7 @@ height: 24px;
 #vmpDot1{
     width: 24px;
     height: 24px;
-    display: none;
+    display: block;
 }
 #vmpDot2{
     width: 24px;
