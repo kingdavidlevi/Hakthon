@@ -19,6 +19,37 @@ body{
 }
 
 
+#cmp1Customize{
+    width: 326px;
+    height: 22px;
+    padding: 2px 0px 2px 0px;
+    gap: 16px;
+}
+#cmp2Customize{
+    width: 326px;
+    height: 22px;
+    padding: 2px 0px 2px 0px;
+    gap: 16px;
+}
+#cmp3Customize{
+    width: 326px;
+    height: 22px;
+    padding: 2px 0px 2px 0px;
+    gap: 16px;
+}
+#cmp4Customize{
+    width: 326px;
+    height: 22px;
+    padding: 2px 0px 2px 0px;
+    gap: 16px;
+}
+#cmp5Customize{
+    width: 326px;
+    height: 22px;
+    padding: 2px 0px 2px 0px;
+    gap: 16px;
+}
+
 
 #goodDiv1{
     width: 24px;
@@ -1005,31 +1036,94 @@ display: flex;
     color: #303030;
 }
 
+#Good1{
+    top: 2px;
+    left: 2px; 
+}
+#Good2{
+    top: 2px;
+    left: 2px; 
+}
+#Good3{
+    top: 2px;
+    left: 2px; 
+}
+#Good4{
+    top: 2px;
+    left: 2px; 
+}
+#Good5{
+    top: 2px;
+    left: 2px; 
+}
+
+#cmp1Good{
+    height: 24px;
+    width: 24px;
+    gap: 8px;
+    display: none;
+}
+
+#cmp2Good{
+    height: 24px;
+    width: 24px;
+    gap: 8px;
+    display: none;
+}
+
+#cmp3Good{
+    height: 24px;
+    width: 24px;
+    gap: 8px;
+    display: none;
+}
+
+#cmp4Good{
+    height: 24px;
+    width: 24px;
+    gap: 8px;
+    display: none;
+}
+
+#cmp5Good{
+    height: 24px;
+    width: 24px;
+    gap: 8px;
+    display: none;
+}
+
 #dot1{
     height: 24px;
     width: 24px;
     gap: 8px;
+    display: block;
     
 }
 #dot2{
     height: 24px;
     width: 24px;
     gap: 8px;
+    display: block;
+    
+    
 }
 #dot3{
     height: 24px;
     width: 24px;
     gap: 8px;
+    display: block;
 }
 #dot4{
     height: 24px;
     width: 24px;
     gap: 8px;
+    display: block;
 }
 #dot5{
     height: 24px;
     width: 24px;
     gap: 8px;
+    display: block;
 }
 
 #dotsmall1{

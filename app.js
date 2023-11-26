@@ -22,6 +22,11 @@ document.addEventListener('DOMContentLoaded', () => {
   let cmp3 = document.getElementById('cmp3')
   let cmp4 = document.getElementById('cmp4')
   let cmp5 = document.getElementById('cmp5')
+  let cmp1Good = document.getElementById('cmp1Good')
+  let cmp2Good = document.getElementById('cmp2Good')
+  let cmp3Good = document.getElementById('cmp3Good')
+  let cmp4Good = document.getElementById('cmp4Good')
+  let cmp5Good = document.getElementById('cmp5Good')
   let vmp1 = document.getElementById('vmp1')
   let vmp2 = document.getElementById('vmp2')
   let vmp3 = document.getElementById('vmp3')
@@ -44,9 +49,49 @@ document.addEventListener('DOMContentLoaded', () => {
   let goodDiv3 = document.getElementById('goodDiv3')
   let goodDiv4 = document.getElementById('goodDiv4')
   let goodDiv5 = document.getElementById('goodDiv5')
-  let timeoutId;
+ let cmp1Customize = document.getElementById('cmp1Customize')
+ let cmp2Customize = document.getElementById('cmp2Customize')
+ let cmp3Customize = document.getElementById('cmp3Customize')
+ let cmp4Customize = document.getElementById('cmp4Customize')
+ let cmp5Customize = document.getElementById('cmp5Customize')
+ let dot1 = document.getElementById('dot1')
+ let dot2 = document.getElementById('dot2')
+ let dot3 = document.getElementById('dot3')
+ let dot4 = document.getElementById('dot4')
+ let dot5 = document.getElementById('dot5')
 
 
+
+
+
+
+
+goodDiv1.addEventListener('click' , () => {
+  let stylegoodDiv1 = window.getComputedStyle(goodDiv1)
+  if(stylegoodDiv1.display === 'block'){
+    goodDiv1.style.display = 'none'
+  }
+
+  if(stylegoodDiv1 === 'none'){
+    vmpDot1.style.display = 'block'
+  }
+
+
+})
+
+
+goodDiv2.addEventListener('click' , () => {
+  let stylegoodDiv2 = window.getComputedStyle(goodDiv2)
+  if(stylegoodDiv2.display === 'block'){
+    goodDiv2.style.display = 'none'
+  }
+
+  if(stylegoodDiv2 === 'none'){
+    vmpDot2.style.display = 'block'
+  }
+
+
+})
 
 hideArrow.addEventListener('click', () => {
   let sectionStyle = window.getComputedStyle(bigDiv1)
@@ -113,12 +158,447 @@ hideArrow.addEventListener('click', () => {
 
  })
  
+
+ vmpDot1.addEventListener('click', () => {
+ let stylevmpDot1 = window.getComputedStyle(vmpDot1)
+let stylerotate1 = window.getComputedStyle(rotateCon1)
+let Stylevmp1 = window.getComputedStyle(vmp1)
+
+
+   if(stylevmpDot1.display === 'block'){
+    vmpDot1.style.display = 'none'
+   }
+
+   if(stylevmpDot1.display === 'none'){
+    rotateCon1.style.display = 'block'
+    goodDiv1.style.display = 'none'
+    cmp1Good.style.display = 'block'
+    dot1.style.display = 'none'
+   }
+
+
+   setTimeout(() => {
+    if (stylerotate1.display === 'block'){
+     rotateCon1.style.display = 'none'
+   }
+ },300);
+   
+ 
+ setTimeout(() => {
+  if(Stylevmp1.display === 'block') {  
+   goodDiv1.style.display = 'block'
+  }
+ 
+ }, 300);
+
+ })
+
+
+
+ vmpDot2.addEventListener('click', () => {
+ let stylevmpDot2 = window.getComputedStyle(vmpDot2)
+let stylerotate2 = window.getComputedStyle(rotateCon2)
+let Stylevmp2 = window.getComputedStyle(vmp2)
+
+
+   if(stylevmpDot2.display === 'block'){
+    vmpDot2.style.display = 'none'
+   }
+
+   if(stylevmpDot2.display === 'none'){
+    rotateCon2.style.display = 'block'
+    goodDiv2.style.display = 'none'
+    dot2.style.display = 'none'
+    cmp2Good.style.display = 'block'
+   }
+
+
+   setTimeout(() => {
+    if (stylerotate2.display === 'block'){
+     rotateCon2.style.display = 'none'
+   }
+ },300);
+   
+ 
+ setTimeout(() => {
+  if(Stylevmp2.display === 'block') {  
+   goodDiv2.style.display = 'block'
+  }
+ 
+ }, 300);
+
+ })
+
+
+
+
+ vmpDot3.addEventListener('click', () => {
+ let stylevmpDot3 = window.getComputedStyle(vmpDot3)
+let stylerotate3 = window.getComputedStyle(rotateCon3)
+let Stylevmp3 = window.getComputedStyle(vmp3)
+
+
+   if(stylevmpDot3.display === 'block'){
+    vmpDot3.style.display = 'none'
+   }
+
+   if(stylevmpDot3.display === 'none'){
+    rotateCon3.style.display = 'block'
+    goodDiv3.style.display = 'none'
+    dot3.style.display = 'none'
+    cmp3Good.style.display = 'block'
+   }
+
+
+   setTimeout(() => {
+    if (stylerotate3.display === 'block'){
+     rotateCon3.style.display = 'none'
+   }
+ },300);
+   
+ 
+ setTimeout(() => {
+  if(Stylevmp3.display === 'block') {  
+   goodDiv3.style.display = 'block'
+  }
+ 
+ }, 300);
+
+ })
+
+
+
+ vmpDot4.addEventListener('click', () => {
+ let stylevmpDot4 = window.getComputedStyle(vmpDot4)
+let stylerotate4 = window.getComputedStyle(rotateCon4)
+let Stylevmp4 = window.getComputedStyle(vmp4)
+
+
+   if(stylevmpDot4.display === 'block'){
+    vmpDot4.style.display = 'none'
+   }
+
+   if(stylevmpDot4.display === 'none'){
+    rotateCon4.style.display = 'block'
+   
+    goodDiv4.style.display = 'none'
+    dot4.style.display = 'none'
+    cmp4Good.style.display = 'block'
+   }
+
+
+   setTimeout(() => {
+    if (stylerotate4.display === 'block'){
+     rotateCon4.style.display = 'none'
+   }
+ },300);
+   
+ 
+ setTimeout(() => {
+  if(Stylevmp4.display === 'block') {  
+   goodDiv4.style.display = 'block'
+  }
+ 
+ }, 300);
+
+ })
+
+
+ vmpDot5.addEventListener('click', () => {
+ let stylevmpDot5 = window.getComputedStyle(vmpDot5)
+let stylerotate5 = window.getComputedStyle(rotateCon5)
+let Stylevmp5 = window.getComputedStyle(vmp5)
+
+
+   if(stylevmpDot5.display === 'block'){
+    vmpDot5.style.display = 'none'
+   }
+
+   if(stylevmpDot5.display === 'none'){
+    rotateCon5.style.display = 'block'
+    goodDiv5.style.display = 'none'
+    dot5.style.display = 'none'
+    cmp5Good.style.display = 'block'
+   }
+
+
+   setTimeout(() => {
+    if (stylerotate5.display === 'block'){
+     rotateCon5.style.display = 'none'
+   }
+ },300);
+   
+ 
+ setTimeout(() => {
+  if(Stylevmp5.display === 'block') {  
+   goodDiv5.style.display = 'block'
+  }
+ 
+ }, 300);
+
+ })
+
+ 
+  
+ cmp1Customize.addEventListener('click', () => {
+     
+   let stylegood1 = window.getComputedStyle(cmp1Good)
+   let Stylecmp1 = window.getComputedStyle(cmp1)
+   let Stylevmp1 = window.getComputedStyle(vmp1)
+   let styleDot1 = window.getComputedStyle(dot1)
+ 
+ 
+   if(Stylecmp1.display === 'block'){
+     cmp1.style.display = 'none'
+ 
+   }
+ 
+   if(Stylecmp1.display === 'none'){
+     vmp1.style.display = 'block';
+     rotateCon1.style.display = 'none'
+    
+     vmpDot1.style.display = 'none'
+     smallDiv1.style.height = '449px'
+     vmp2.style.display = 'none';
+     vmp3.style.display = 'none';
+ 
+     vmp4.style.display = 'none';
+     vmp5.style.display = 'none';
+ 
+     cmp2.style.display = 'block';
+     cmp3.style.display = 'block';
+     cmp4.style.display = 'block';
+     cmp5.style.display = 'block';
+   }
+
+   if (stylegood1.display === 'block'){
+    goodDiv1.style.display = 'block'
+  }
+
+  if (styleDot1.display === 'block'){
+    vmpDot1.style.display = 'block'
+  }
+
+ })
+
+
+
+ cmp2Customize.addEventListener('click', () => {
+     
+   let stylegood2 = window.getComputedStyle(cmp2Good)
+   let Stylecmp2 = window.getComputedStyle(cmp2)
+   let Stylevmp2 = window.getComputedStyle(vmp2)
+   let styleDot2 = window.getComputedStyle(dot2)
+ 
+ 
+   if(Stylecmp2.display === 'block'){
+     cmp2.style.display = 'none'
+ 
+   }
+ 
+   if(Stylecmp2.display === 'none'){
+     vmp2.style.display = 'block';
+     rotateCon2.style.display = 'none'
+    
+     vmpDot2.style.display = 'none'
+     smallDiv1.style.height = '449px'
+     vmp1.style.display = 'none';
+     vmp3.style.display = 'none';
+ 
+     vmp4.style.display = 'none';
+     vmp5.style.display = 'none';
+ 
+     cmp1.style.display = 'block';
+     cmp3.style.display = 'block';
+     cmp4.style.display = 'block';
+     cmp5.style.display = 'block';
+   }
+
+   if (stylegood2.display === 'block'){
+    goodDiv2.style.display = 'block'
+  }
+
+  if (styleDot2.display === 'block'){
+    vmpDot2.style.display = 'block'
+  }
+
+ })
+
+
+
+ cmp3Customize.addEventListener('click', () => {
+     
+   let stylegood3 = window.getComputedStyle(cmp3Good)
+   let Stylecmp3 = window.getComputedStyle(cmp3)
+   let Stylevmp3 = window.getComputedStyle(vmp3)
+   let styleDot3 = window.getComputedStyle(dot3)
+ 
+ 
+   if(Stylecmp3.display === 'block'){
+     cmp3.style.display = 'none'
+ 
+   }
+ 
+   if(Stylecmp3.display === 'none'){
+     vmp3.style.display = 'block';
+     rotateCon3.style.display = 'none'
+    
+     vmpDot3.style.display = 'none'
+     smallDiv1.style.height = '467px'
+     vmp1.style.display = 'none';
+     vmp2.style.display = 'none';
+ 
+     vmp4.style.display = 'none';
+     vmp5.style.display = 'none';
+ 
+     cmp1.style.display = 'block';
+     cmp2.style.display = 'block';
+     cmp4.style.display = 'block';
+     cmp5.style.display = 'block';
+   }
+
+   if (stylegood3.display === 'block'){
+    goodDiv3.style.display = 'block'
+  }
+
+  if (styleDot3.display === 'block'){
+    vmpDot3.style.display = 'block'
+  }
+
+ })
+
+
+ cmp4Customize.addEventListener('click', () => {
+     
+   let stylegood4 = window.getComputedStyle(cmp4Good)
+   let Stylecmp4 = window.getComputedStyle(cmp4)
+   let Stylevmp4 = window.getComputedStyle(vmp4)
+   let styleDot4 = window.getComputedStyle(dot4)
+ 
+ 
+   if(Stylecmp4.display === 'block'){
+     cmp4.style.display = 'none'
+ 
+   }
+ 
+   if(Stylecmp4.display === 'none'){
+     vmp4.style.display = 'block';
+     rotateCon4.style.display = 'none'
+    
+     vmpDot4.style.display = 'none'
+     smallDiv1.style.height = '467px'
+     vmp1.style.display = 'none';
+     vmp2.style.display = 'none';
+ 
+     vmp3.style.display = 'none';
+     vmp5.style.display = 'none';
+ 
+     cmp1.style.display = 'block';
+     cmp2.style.display = 'block';
+     cmp3.style.display = 'block';
+     cmp5.style.display = 'block';
+   }
+
+   if (stylegood4.display === 'block'){
+    goodDiv4.style.display = 'block'
+  }
+
+  if (styleDot4.display === 'block'){
+    vmpDot4.style.display = 'block'
+  }
+
+ })
+ cmp4Customize.addEventListener('click', () => {
+     
+   let stylegood4 = window.getComputedStyle(cmp4Good)
+   let Stylecmp4 = window.getComputedStyle(cmp4)
+   let Stylevmp4 = window.getComputedStyle(vmp4)
+   let styleDot4 = window.getComputedStyle(dot4)
+ 
+ 
+   if(Stylecmp4.display === 'block'){
+     cmp4.style.display = 'none'
+ 
+   }
+ 
+   if(Stylecmp4.display === 'none'){
+     vmp4.style.display = 'block';
+     rotateCon4.style.display = 'none'
+    
+     vmpDot4.style.display = 'none'
+     smallDiv1.style.height = '467px'
+     vmp1.style.display = 'none';
+     vmp2.style.display = 'none';
+ 
+     vmp3.style.display = 'none';
+     vmp5.style.display = 'none';
+ 
+     cmp1.style.display = 'block';
+     cmp2.style.display = 'block';
+     cmp3.style.display = 'block';
+     cmp5.style.display = 'block';
+   }
+
+   if (stylegood4.display === 'block'){
+    goodDiv4.style.display = 'block'
+  }
+
+  if (styleDot4.display === 'block'){
+    vmpDot4.style.display = 'block'
+  }
+
+ })
+
+ cmp5Customize.addEventListener('click', () => {
+     
+   let stylegood5 = window.getComputedStyle(cmp5Good)
+   let Stylecmp5 = window.getComputedStyle(cmp5)
+   let Stylevmp5 = window.getComputedStyle(vmp5)
+   let styleDot5 = window.getComputedStyle(dot5)
+ 
+ 
+   if(Stylecmp5.display === 'block'){
+     cmp5.style.display = 'none'
+ 
+   }
+ 
+   if(Stylecmp5.display === 'none'){
+     vmp5.style.display = 'block';
+     rotateCon5.style.display = 'none'
+    
+     vmpDot5.style.display = 'none'
+     smallDiv1.style.height = '467px'
+     vmp1.style.display = 'none';
+     vmp2.style.display = 'none';
+ 
+     vmp3.style.display = 'none';
+     vmp4.style.display = 'none';
+ 
+     cmp1.style.display = 'block';
+     cmp2.style.display = 'block';
+     cmp3.style.display = 'block';
+     cmp4.style.display = 'block';
+   }
+
+   if (stylegood5.display === 'block'){
+    goodDiv5.style.display = 'block'
+  }
+
+  if (styleDot5.display === 'block'){
+    vmpDot5.style.display = 'block'
+  }
+
+ })
+
+ 
+ 
+
  
 
 
  dotsmall1.addEventListener('click', () => {
  
-
+   let stylegood1 = window.getComputedStyle(cmp1Good)
   let Stylecmp1 = window.getComputedStyle(cmp1)
   let Stylevmp1 = window.getComputedStyle(vmp1)
   let stylesection1 = window.getComputedStyle(section1)
@@ -132,8 +612,12 @@ hideArrow.addEventListener('click', () => {
 
   if(Stylecmp1.display === 'none'){
     vmp1.style.display = 'block';
-    rotateCon1.style.display = 'block'
+     
+    cmp1Good.style.display = 'block'
     goodDiv1.style.display = 'none'
+    dot1.style.display = 'none'
+    rotateCon1.style.display = 'block'
+   
     vmpDot1.style.display = 'none'
     smallDiv1.style.height = '449px'
     vmp2.style.display = 'none';
@@ -149,36 +633,40 @@ hideArrow.addEventListener('click', () => {
 
 
   }
-  
+
 
   setTimeout(() => {
-   if (stylerotate1.display === 'block'){
-    rotateCon1.style.display = 'none'
+    if (stylerotate1.display === 'block'){
+     rotateCon1.style.display = 'none'
+   }
+ },300);
+   
+ 
+ setTimeout(() => {
+  if(Stylevmp1.display === 'block') {  
+   goodDiv1.style.display = 'block'
   }
-},300);
+ 
+ }, 300);
+
+
+})
+
+
+
   
 
-setTimeout(() => {
- if(Stylevmp1.display === 'block') {  
-  goodDiv1.style.display = 'block'
- }
 
-}, 300);
-
- })
-
-
-
-
-
-
+  
 
 
  dotsmall2.addEventListener('click', () => {
   let Stylecmp2 = window.getComputedStyle(cmp2)
   let Stylevmp2 = window.getComputedStyle(vmp2)
   let stylerotate2 = window.getComputedStyle(rotateCon2)
-  
+  let stylegood2 = window.getComputedStyle(cmp2Good)
+
+
   if(Stylecmp2.display === 'block'){
     cmp2.style.display = 'none'
 
@@ -186,23 +674,25 @@ setTimeout(() => {
 
   if(Stylecmp2.display === 'none'){
     vmp2.style.display = 'block';
-    goodDiv2.style.display = 'none'
-    smallDiv1.style.height = '449px'
+    rotateCon2.style.display = 'block'
+    cmp2Good.style.display = 'block'
+    dot2.style.display = 'none'
+    vmpDot2.style.display = 'none'
+    smallDiv1.style.height = '485px'
     vmp3.style.display = 'none';
     vmp4.style.display = 'none';
-    vmp5.style.display = 'none';
+    vmp4.style.display = 'none';
     vmp1.style.display = 'none';
-
+  
 
     cmp1.style.display = 'block';
     cmp3.style.display = 'block';
     cmp4.style.display = 'block';
-    cmp5.style.display = 'block';
+    cmp4.style.display = 'block';
 
   }
 
- 
-  setTimeout(() => {
+setTimeout(() => {
     if (stylerotate2.display === 'block'){
      rotateCon2.style.display = 'none'
    }
@@ -221,6 +711,17 @@ setTimeout(() => {
 
 
 
+  /*if(stylegood2.display === 'block'){
+    vmpDot2.style.display = 'none'
+    goodDiv2.style.display = 'block'
+    
+  }
+*/
+ 
+
+
+
+
 
 
 
@@ -228,6 +729,7 @@ setTimeout(() => {
  dotsmall3.addEventListener('click', () => {
   let Stylecmp3 = window.getComputedStyle(cmp3)
   let Stylevmp3 = window.getComputedStyle(vmp3)
+  let stylerotate3 = window.getComputedStyle(rotateCon3)
   
   if(Stylecmp3.display === 'block'){
     cmp3.style.display = 'none'
@@ -236,6 +738,11 @@ setTimeout(() => {
 
   if(Stylecmp3.display === 'none'){
     vmp3.style.display = 'block';
+    cmp3Good.style.display = 'block'
+    dot3.style.display = 'none'
+    rotateCon3.style.display = 'block'
+    vmpDot3.style.display = 'none'
+    goodDiv3.style.display = 'none'
     smallDiv1.style.height = '467px'
     vmp4.style.display = 'none';
     vmp5.style.display = 'none';
@@ -253,7 +760,20 @@ setTimeout(() => {
 
   
 
+ 
+  setTimeout(() => {
+    if (stylerotate3.display === 'block'){
+     rotateCon3.style.display = 'none'
+   }
+ },300);
+   
+ 
+ setTimeout(() => {
+  if(Stylevmp3.display === 'block')   {
+   goodDiv3.style.display = 'block'
+  }
 
+ },300);
  
 
 
@@ -265,6 +785,7 @@ setTimeout(() => {
  dotsmall4.addEventListener('click', () => {
   let Stylecmp4 = window.getComputedStyle(cmp4)
   let Stylevmp4 = window.getComputedStyle(vmp4)
+  let stylerotate4 = window.getComputedStyle(rotateCon4)
   
   if(Stylecmp4.display === 'block'){
     cmp4.style.display = 'none'
@@ -273,6 +794,11 @@ setTimeout(() => {
 
   if(Stylecmp4.display === 'none'){
     vmp4.style.display = 'block';
+    cmp4Good.style.display = 'block'
+    dot4.style.display = 'none'
+    vmpDot4.style.display = 'none'
+    rotateCon4.style.display = 'block'
+    goodDiv4.style.display = 'none'
     smallDiv1.style.height = '467px'
     vmp3.style.display = 'none';
     vmp2.style.display = 'none';
@@ -289,6 +815,20 @@ setTimeout(() => {
   }
 
 
+  setTimeout(() => {
+    if (stylerotate4.display === 'block'){
+     rotateCon4.style.display = 'none'
+   }
+ },300);
+   
+ 
+ setTimeout(() => {
+  if(Stylevmp4.display === 'block')   {
+   goodDiv4.style.display = 'block'
+  }
+
+ },300);
+ 
  
 
  })
@@ -300,6 +840,7 @@ setTimeout(() => {
  dotsmall5.addEventListener('click', () => {
   let Stylecmp5 = window.getComputedStyle(cmp5)
   let Stylevmp5 = window.getComputedStyle(vmp5)
+  let stylerotate5 = window.getComputedStyle(rotateCon5)
   
   if(Stylecmp5.display === 'block'){
     cmp5.style.display = 'none'
@@ -308,6 +849,11 @@ setTimeout(() => {
 
   if(Stylecmp5.display === 'none'){
     vmp5.style.display = 'block';
+    rotateCon5.style.display = 'block'
+    cmp5Good.style.display = 'block'
+    dot5.style.display = 'none'
+    goodDiv5.style.display = 'none'
+    vmpDot5.style.display = 'none'
     smallDiv1.style.height = '485px'
     vmp3.style.display = 'none';
     vmp2.style.display = 'none';
@@ -326,6 +872,20 @@ setTimeout(() => {
 
 
   
+  setTimeout(() => {
+    if (stylerotate5.display === 'block'){
+     rotateCon5.style.display = 'none'
+   }
+ },300);
+   
+ 
+ setTimeout(() => {
+  if(Stylevmp5.display === 'block')   {
+   goodDiv5.style.display = 'block'
+  }
+
+ },300);
+ 
 
 
  })
