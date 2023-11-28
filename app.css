@@ -10,7 +10,246 @@ body{
 
 
 @media only screen and (max-width:500px) {
+ 
     
+
+ #mobile-dc-notification{
+  position: absolute;
+  height: 384px;
+  top: 70px;
+  left: 54px;
+  border-radius: 14px;
+  border: 1px solid #dbdbdb;
+  gap: 4px;
+  padding: 6px 0px 6px 0px;
+  width: 320px;
+  background-color: white;
+  display: none;
+ }
+
+ .flex-davii{
+    display: flex;
+    width: 141px;
+    height: 28px;
+    gap: 8px;
+ }
+
+ .mobile-coll{
+    justify-content: space-between;
+    padding: 4px 12px 4px 8px;
+    display: flex;
+    border-radius: 8px;
+    width: 308px;
+    height: 36px;
+    background-color: #f1f1f1;
+ }
+
+ #mobile-toggle:hover{
+   background-color: #f1f1f1;
+ }
+
+ .i{
+    width: 308px;
+    height: 32px;
+    border-radius: 8px;
+    padding: 6px;
+    gap: 8px;
+    display: flex;
+    border-radius: 8px;
+    margin-top: 8px;
+   
+ }
+ .mobile-div{
+    left: 3px;
+    top: 3px;
+ }
+
+ #mobile-help{
+    width: 320px;
+    height: 166px;
+    padding: 0px 6px 0px 6px ;
+    gap: 4px;
+   
+    
+ }
+.hr{
+    border: 0.5px solid #f1f1f1;
+    width: 100%;
+}
+ .mobile5{
+    width: 308px;
+    height: 30px;
+    border-radius: 8px;
+    padding: 6px;
+    gap: 8px;
+    margin-top: 3px;
+    
+
+ }
+
+ .store{
+   width: 57px;
+   height: 18px;
+   
+ }
+
+ .id-div{
+    width: 20px;
+    height: 20px;
+ }
+
+ .david-1{
+ font-weight: 400;
+ line-height: 15.6px;
+ font-size: 12px;
+ color: #616161;
+ }
+.david{
+   font-size: 13px; 
+   line-height: 18.2px;
+   font-weight: 500;
+   color:#303030;
+}
+
+.manage{
+width: 308px;
+height: 30px;
+border-radius: 8px;
+padding: 6px;
+gap: 8px;
+
+}
+
+.log-out{
+    width: 308px;
+    height: 30px;
+    border-radius: 8px;
+    padding: 6px;
+    gap: 8px;
+}
+ .last-1{
+    width: 308px;
+    height: 50px;
+    border-radius: 8px;
+    padding: 8px;
+ }
+
+ .mobile-p1{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18.2px;
+   color:  #303030;
+ }
+ .pp1{
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 18.2px;
+    color: #303030;
+    margin-top: 5px;
+ }
+
+ .mobile-green{
+    width: 28px;
+    height: 28px;
+    background-color: #36fba1;
+    border-radius: 5.25px;
+    align-items: center;
+    text-align: center;
+ }
+
+ .d{
+    margin-top: 8px;
+   color:  #303030 ;
+    font-size: 10.5px;
+    font-weight: 500;
+    left: 6.13px;
+ 
+ }
+
+ 
+ .davii-container{
+  width: 320px;
+  height: 72px;
+  padding: 0px 6px 0px 6px;
+  height: 72px;
+  margin-bottom: 8px;
+ }
+
+.last{
+    width: 320px;
+    height: 118px;
+    padding: 0px 6px 0px 6px;
+    gap: 4px;
+    margin-top: 5px;
+}
+
+    
+#mobile-white{
+width: 358px;
+height: 136px;
+ left: 16px;
+padding: 16px;
+gap: 16px;
+border: 1px solid #dbdbdb;
+position: absolute;
+z-index: 4;
+ top: 70px;
+background-color: white;
+border-radius: 14px;
+text-align: center; 
+display: none;
+ 
+}
+
+#noti{
+    width: 56px;
+    height: 20px;
+    gap: 16px;
+    display: flex;
+}
+
+#bottom-alerts{
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 18.2px;
+    color: #616161;
+    
+
+}
+
+#bottom{
+    background-color: #f1f1f1;
+    gap: 8px;
+    height: 68px;
+    width: 326px;
+    padding: 16px;
+    margin-top: 15px;
+}
+#mobile-alert-flex{
+display: flex;
+width: 326px;
+height: 20px;
+justify-content: space-between;
+}
+
+#alerts{
+width: 41px;
+height:20px ;
+
+}
+
+#alerts-para{
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19.6px;
+  color: #303030;
+}
+
+
+
+
+
+
 
 .header{
    
@@ -437,7 +676,7 @@ display: none;
    
 }
 
-.bell{
+#bell{
     width: 32px;
     height: 32px;
     padding: 6px;
@@ -483,13 +722,13 @@ display: none;
 
 #small-loader{
     height: 4px;
-    width: 18px;
+    width: 0px;
     background-color: #1A1A1A;
     border-radius: 28px; 
 }
 #small-loader1{
     height: 4px;
-    width: 18px;
+    width: 0px;
     background-color: #1A1A1A;
     border-radius: 28px; 
 }
@@ -562,7 +801,7 @@ display: none;
     width: 90px;
     height: 4px;
     border-radius: 28px;
-    background-color:#E3E3E3 ;
+    background-color:#f3f3f3;
     margin-top: 7px; 
 }
 
@@ -580,7 +819,7 @@ display: none;
     line-height: 15.6px;
 }
 
-.dc{
+#dc{
    width: 32px; 
    height: 32px;
    border-radius: 8px;
@@ -619,6 +858,7 @@ line-height: 19.6px;
     border-radius: 10px;
     padding: 8px;
     gap: 8px;
+     
 }
 
 #section{
@@ -1211,6 +1451,320 @@ display: flex;
 
 @media only screen and (min-width:1024px){
 
+
+#laptop-Alert{
+  width: 383px;
+  height: 118px;
+  top: 70px;
+  gap: 16px;
+  border-radius: 14px;
+  border: 1px solid #dbdbdb;
+  background-color: white;
+  padding: 16px;
+  left: 1041px;
+  position: absolute;
+  display: none;
+  
+}
+#ii{
+ width: 56px;
+ height: 20px;
+ gap: 16px;
+ display: flex;
+}
+#bg-p{
+   font-size: 13px; 
+   color: #616161;
+   line-height: 18.2px;
+   font-weight: 600;
+}
+
+#bg{
+   width: 351px; 
+   height: 50px;
+   padding: 16px;
+   gap: 8px;
+   background-color: #f1f1f1;
+   margin-top: 15px;
+}
+
+#iv{
+    width: 20px;
+    height: 20px;
+}
+
+#v{
+    width: 20px;
+    height: 20px;
+}
+
+#omega{
+width: 351px;
+height: 20px;
+display: flex;
+justify-content: space-between;
+ 
+}
+
+
+    #laptop-dc-notification{
+        position: absolute;
+        height: 384px;
+        top: 70px;
+        left: 1104px;
+        border-radius: 14px;
+        border: 1px solid #dbdbdb;
+        gap: 4px;
+        padding: 6px 0px 6px 0px;
+        width: 320px;
+        background-color: white;
+        display: none;
+       }
+      
+       .flex-davii{
+          display: flex;
+          width: 141px;
+          height: 28px;
+          gap: 8px;
+       }
+      
+       .mobile-coll{
+          justify-content: space-between;
+          padding: 4px 12px 4px 8px;
+          display: flex;
+          border-radius: 8px;
+          width: 308px;
+          height: 36px;
+          background-color: #f1f1f1;
+          cursor: pointer;
+       }
+      
+       #mobile-toggle:active{
+        outline: 2px solid #005bd3;
+       }
+      
+       #mobile-toggle:focus{
+      outline: 2px solid #005bd3;
+       }
+      
+       .i{
+          width: 308px;
+          height: 32px;
+          border-radius: 8px;
+          padding: 6px;
+          gap: 8px;
+          display: flex;
+          border-radius: 8px;
+          margin-top: 8px;
+          cursor: pointer;
+         
+       }
+       .mobile-div{
+          left: 3px;
+          top: 3px;
+       }
+      
+       #mobile-help{
+          width: 320px;
+          height: 166px;
+          padding: 0px 6px 0px 6px ;
+          gap: 4px;
+         
+          
+       }
+      .hr{
+          border: 0.5px solid #f1f1f1;
+          width: 100%;
+      }
+       .mobile5{
+          width: 308px;
+          height: 30px;
+          border-radius: 8px;
+          padding: 6px;
+          gap: 8px;
+         display: block;
+          padding: 6px;
+          gap: 8px;
+          margin-top: 3px;
+          cursor: pointer;
+
+          
+      
+       }
+      
+       .store{
+         width: 57px;
+         height: 18px;
+         
+       }
+      
+       .id-div{
+          width: 20px;
+          height: 20px;
+       }
+      
+       .david-1{
+       font-weight: 400;
+       line-height: 15.6px;
+       font-size: 12px;
+       color: #616161;
+       }
+      .david{
+         font-size: 13px; 
+         line-height: 18.2px;
+         font-weight: 500;
+         color:#303030;
+         cursor: pointer;
+      }
+      
+      .manage{
+      width: 308px;
+      height: 30px;
+      border-radius: 8px;
+      padding: 6px;
+      gap: 8px;
+      cursor: pointer;
+      
+      }
+      
+      .log-out{
+          width: 308px;
+          height: 30px;
+          border-radius: 8px;
+          padding: 6px;
+          gap: 8px;
+          cursor: pointer;
+      }
+       .last-1{
+          width: 308px;
+          height: 50px;
+          border-radius: 8px;
+          padding: 8px;
+       }
+      
+       .mobile-p1{
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 18.2px;
+         color:  #303030;
+       }
+       .pp1{
+          font-weight: 600;
+          font-size: 13px;
+          line-height: 18.2px;
+          color: #303030;
+          margin-top: 5px;
+       }
+      
+       .mobile-green{
+          width: 28px;
+          height: 28px;
+          background-color: #36fba1;
+          border-radius: 5.25px;
+          align-items: center;
+          text-align: center;
+       }
+      
+       .d{
+          margin-top: 8px;
+         color:  #303030 ;
+          font-size: 10.5px;
+          font-weight: 500;
+          left: 6.13px;
+       
+       }
+      
+       
+       .davii-container{
+        width: 320px;
+        height: 72px;
+        padding: 0px 6px 0px 6px;
+        height: 72px;
+        margin-bottom: 8px;
+       }
+      
+      .last{
+          width: 320px;
+          height: 118px;
+          padding: 0px 6px 0px 6px;
+          gap: 4px;
+          margin-top: 5px;
+      }
+      
+          
+      #mobile-white{
+      width: 358px;
+      height: 136px;
+       left: 1104px;
+      padding: 16px;
+      gap: 16px;
+      border: 1px solid #dbdbdb;
+      position: absolute;
+      z-index: 4;
+       top: 70px;
+      background-color: white;
+      border-radius: 14px;
+      text-align: center; 
+       
+      }
+      
+      #noti{
+          width: 56px;
+          height: 20px;
+          gap: 16px;
+          display: flex;
+      }
+      
+      #bottom-alerts{
+          font-weight: 600;
+          font-size: 13px;
+          line-height: 18.2px;
+          color: #616161;
+          
+      
+      }
+      
+      #bottom{
+          background-color: #f1f1f1;
+          gap: 8px;
+          height: 68px;
+          width: 326px;
+          padding: 16px;
+          margin-top: 15px;
+          cursor: pointer;
+      }
+      #mobile-alert-flex{
+      display: flex;
+      width: 326px;
+      height: 20px;
+      justify-content: space-between;
+      }
+      
+      #alerts{
+      width: 41px;
+      height:20px ;
+      
+      }
+      
+      #alerts-para{
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19.6px;
+        color: #303030;
+      }
+
+
+
+
+
+
+
+
+
+
+    
+
+
 #laptop-goodDiv1{
     width: 24px;
     height: 24px;
@@ -1249,7 +1803,7 @@ display: flex;
 #laptop-vmpDot1{
 width: 24px;
 height: 24px;
-display: none;
+display: block;
 }
 #laptop-vmpDot2{
 width: 24px;
@@ -1319,6 +1873,7 @@ display: none;
     display: flex;
     width: 100%;
     background-color: #1A1A1A;
+    top: 0px;
 }
 
 #laptop-shopify{
@@ -1350,7 +1905,9 @@ display: none;
     
 
 }
-
+#mobile-div1{
+    display: none;
+}
  
 #laptopdiv-cancel:hover{
     cursor: pointer;
@@ -1389,7 +1946,11 @@ display: none;
    
 }
 
- 
+ #laptop-rotate-con1{
+    width: 24px;
+    height: 24px;
+    display: none;
+ }
 
 #laptop-cmp5Good{
     width: 24px;
@@ -1484,6 +2045,8 @@ display: none;
     padding: 2px 0px 2px 0px;
     gap: 16px;
 }
+
+
 .vmp-btn{
     background-color: #404040;
     color: #ffffff;
@@ -1565,23 +2128,13 @@ display: none;
    display: none;
     
 }
-#laptop-5{
-    background-color:  #f3f3f3;
-    width: 784px;
-    height: 141px;
-    border-radius: 10px;
-    padding: 8px 8px 12px 8px;
-    gap: 96px;
-    justify-content: space-between;
-    display: flex;
-   position: relative;
-    
-}
+ 
 
 
 #rotate-con1{
     width: 24px;
     height: 24px;
+
 }
 
 #rotate-con2{
@@ -1838,10 +2391,28 @@ display: none;
     background-color:#656266;
     border-radius:8px ;
     cursor: pointer;
+    box-shadow: 0 0 0 3px #005bd3 ;
 }
 
+.vmp3-btn{
+    background-color: #404040;
+    color: #ffffff;
+    border-radius:6px ;
+    padding: 6px 8px 6px 8px;
+    font-weight: 600;
+    line-height: 15.6px;
+    font-size: 12px;
+    margin-top: 10px;
+}
 
- 
+ .vmp3-p2{
+ font-weight: 500;
+    font-size: 13px;
+    line-height: 19.6px;
+    color:#616161 ;
+    margin-top: 5px;
+ }
+
 
 #laptop-davii{
     width: 464px;
@@ -1890,6 +2461,7 @@ display: none;
    gap: 8px;
    cursor: pointer;
    border-radius: 8px;
+  
 }
 #laptop-dd:focus{
     display: flex;
@@ -1902,6 +2474,7 @@ display: none;
    gap: 8px;
    cursor: pointer;
    border-radius: 8px;
+   box-shadow: 0 0 0 3px #005bd3 ;
 }
 
 #davii-para{
@@ -1918,7 +2491,18 @@ width: 800px;
 border-radius: 8px;
 background-color: #1a1a1a;
 display: flex;
-margin-top: 88px;
+ 
+
+
+}
+#laptop-ExtendContainer1{
+padding: 12px 8px 12px 16px ;
+justify-content: space-between;
+width: 800px;
+border-radius: 8px;
+background-color: #1a1a1a;
+display: flex;
+ 
 
 
 }
@@ -1947,6 +2531,14 @@ background-color: #f7f7f7;
 }
 
 #laptopdiv-cancel{
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    gap: 8px;
+    margin-top: 4px;
+   padding-left: 5px;
+}
+#laptopdiv-cancel1{
     width: 32px;
     height: 32px;
     border-radius: 6px;
@@ -2144,11 +2736,21 @@ border-radius:28px ;
 #laptop-bigDiv{
     display: grid;
     justify-content: center;
+    margin-top: 88px;
     
     
 }
 
-#laptopoverall1 {
+
+#laptop-bigDiv1{
+    display: grid;
+    justify-content: center;
+    display: none;
+    margin-top: 88px;
+    
+}
+
+#laptop-overall1 {
     width: 784px;
     height: 90px;
     justify-content: space-between;
@@ -2166,7 +2768,7 @@ border-radius:28px ;
 
 }
 
-#laptopsection1{
+#laptop-section1{
     margin-top: 20px;
     background-color: white;
     width: 800px;
@@ -2176,12 +2778,7 @@ border-radius:28px ;
      border-radius: 18px;
      border: 1px solid #dbdbdb;
 }
-#laptopbigDiv1{
-    display: grid;
-    justify-content: center;
-    display: none;
 
-}
 
 
 #laptop-middle{
@@ -2244,6 +2841,12 @@ color: #303030;
     width:0px ;
     height: 4px;
     background-color: #1a1a1a;
+ }
+ #laptopsmall-loader1{
+    width: 0px ;
+    height: 4px;
+    background-color: #1a1a1a;
+    border-radius: 8px;
  }
 
 }
