@@ -66,7 +66,8 @@ let mobileNotification = document.getElementById('mobile-dc-notification')
 let mobileDc = document.getElementById('dc')
 let mobilebell = document.getElementById('bell')
 let mmm = document.getElementById('mobile-div')
-
+let mobilecount = document.getElementById('buy')
+let mobilecount1 = document.getElementById('buy1')
 
 
   let laptopSection = document.getElementById('laptop-bigDiv') 
@@ -130,7 +131,7 @@ let LaptopBell = document.getElementById('laptop-icon')
 let mm1 = document.getElementById('laptop-div')
 let toggle = document.getElementById('laptop-toggle')
 let laptopsmall = document.getElementById('small')
-
+let laptopsmall1 = document.getElementById('small1')
 
 
 
@@ -140,13 +141,16 @@ let laptopsmall = document.getElementById('small')
 
 const  laptopcheckloading = {
   isloading:0,
-     
-  calculatewidth: function (num){
+   count:0,
+
+  calculatewidth: function (num,num2){
     this.isloading = this.isloading + num
+    this.count = this.count + num2
   },
 
-  calculateminuswidth: function (num){
+  calculateminuswidth: function (num,num2){
     this.isloading = this.isloading - num
+    this.count = this.count - num2
   }
 
   
@@ -157,18 +161,18 @@ const  laptopcheckloading = {
 
 
 
-
-
-
  const checkloading = {
   isloading:0,
+  count:0,
 
-  calculatewidth: function (num){
+  calculatewidth: function (num,num2){
     this.isloading = this.isloading + num
+    this.count = this.count + num2
   },
 
-  calculateminuswidth: function (num){
+  calculateminuswidth: function (num, num2){
     this.isloading = this.isloading - num
+    this.count = this.count - num2
   }
 
 
@@ -176,6 +180,11 @@ const  laptopcheckloading = {
 
  
  
+ 
+
+   
+
+
 
 
 
@@ -287,9 +296,13 @@ let stylcmp1Good = window.getComputedStyle(cmp1Good)
    }
 
 
-   checkloading.calculateminuswidth(18)
+   checkloading.calculateminuswidth(18, 1)
    smallLoader.style.width = checkloading.isloading + 'px'
    smallLoader1.style.width = checkloading.isloading + 'px'
+
+   
+ mobilecount.innerText = checkloading.count
+ mobilecount1.innerText = checkloading.count
    
  })
 
@@ -314,9 +327,14 @@ let stylcmp1Good = window.getComputedStyle(laptopcmp1Good)
    }
 
 
-   laptopcheckloading.calculateminuswidth(18)
+   laptopcheckloading.calculateminuswidth(18, 1)
    laptopsmallLoader.style.width = laptopcheckloading.isloading + 'px'
    laptopsmallLoader1.style.width = laptopcheckloading.isloading + 'px'
+
+
+   
+ laptopsmall1.innerText = laptopcheckloading.count
+ laptopsmall.innerText = laptopcheckloading.count
    
  })
 
@@ -345,9 +363,13 @@ let stylcmp2Good = window.getComputedStyle(cmp2Good)
    }
 
    
-   checkloading.calculateminuswidth(18)
+   checkloading.calculateminuswidth(18, 1)
    smallLoader.style.width = checkloading.isloading + 'px'
    smallLoader1.style.width = checkloading.isloading + 'px'
+
+   
+ mobilecount.innerText = checkloading.count
+ mobilecount1.innerText = checkloading.count
     
  })
 
@@ -370,9 +392,13 @@ let stylcmp2Good = window.getComputedStyle(laptopcmp2Good)
    }
 
    
-   laptopcheckloading.calculateminuswidth(18)
+   laptopcheckloading.calculateminuswidth(18, 1)
    laptopsmallLoader.style.width = laptopcheckloading.isloading + 'px'
    laptopsmallLoader1.style.width = laptopcheckloading.isloading + 'px'
+
+   
+ laptopsmall1.innerText = laptopcheckloading.count
+ laptopsmall.innerText = laptopcheckloading.count
     
  })
 
@@ -399,9 +425,14 @@ let stylcmp3Good = window.getComputedStyle(cmp3Good)
    }
    
    
-   checkloading.calculateminuswidth(18)
+   checkloading.calculateminuswidth(18,1)
    smallLoader.style.width = checkloading.isloading + 'px'
    smallLoader1.style.width = checkloading.isloading + 'px'
+
+
+   
+ mobilecount.innerText = checkloading.count
+ mobilecount1.innerText = checkloading.count
 
  })
 
@@ -422,9 +453,15 @@ let stylcmp3Good = window.getComputedStyle(laptopcmp3Good)
    }
    
    
-   laptopcheckloading.calculateminuswidth(18)
+   laptopcheckloading.calculateminuswidth(18, 1)
    laptopsmallLoader.style.width = laptopcheckloading.isloading + 'px'
    laptopsmallLoader1.style.width = laptopcheckloading.isloading + 'px'
+
+
+
+   
+ laptopsmall1.innerText = laptopcheckloading.count
+ laptopsmall.innerText = laptopcheckloading.count
 
  })
 
@@ -449,9 +486,13 @@ let stylcmp4Good = window.getComputedStyle(cmp4Good)
     vmpDot4.style.display = 'block'
    }
    
-   checkloading.calculateminuswidth(18)
+   checkloading.calculateminuswidth(18,1)
    smallLoader.style.width = checkloading.isloading + 'px'
    smallLoader1.style.width = checkloading.isloading + 'px'
+
+   
+ mobilecount.innerText = checkloading.count
+ mobilecount1.innerText = checkloading.count
 
  })
 
@@ -470,9 +511,15 @@ let stylcmp4Good = window.getComputedStyle(laptopcmp4Good)
     laptopvmpDot4.style.display = 'block'
    }
    
-   laptopcheckloading.calculateminuswidth(18)
+   laptopcheckloading.calculateminuswidth(18, 1)
    laptopsmallLoader.style.width = laptopcheckloading.isloading + 'px'
    laptopsmallLoader1.style.width = laptopcheckloading.isloading + 'px'
+
+
+
+   
+ laptopsmall1.innerText = laptopcheckloading.count
+ laptopsmall.innerText = laptopcheckloading.count
 
  })
 
@@ -497,9 +544,14 @@ let stylcmp5Good = window.getComputedStyle(cmp5Good)
     vmpDot5.style.display = 'block'
    }
    
-   checkloading.calculateminuswidth(18)
+   checkloading.calculateminuswidth(18,1)
    smallLoader.style.width = checkloading.isloading + 'px'
    smallLoader1.style.width = checkloading.isloading + 'px'
+
+
+   
+ mobilecount.innerText = checkloading.count
+ mobilecount1.innerText = checkloading.count
 
  })
 
@@ -518,9 +570,14 @@ let stylcmp5Good = window.getComputedStyle(laptopcmp5Good)
     laptopvmpDot5.style.display = 'block'
    }
    
-   laptopcheckloading.calculateminuswidth(18)
+   laptopcheckloading.calculateminuswidth(18,1)
    laptopsmallLoader.style.width = laptopcheckloading.isloading + 'px'
    laptopsmallLoader1.style.width = laptopcheckloading.isloading + 'px'
+
+
+   
+ laptopsmall1.innerText = laptopcheckloading.count
+ laptopsmall.innerText = laptopcheckloading.count
 
  })
 
@@ -547,9 +604,13 @@ goodDiv1.addEventListener('click' , () => {
 
  
     
-   checkloading.calculateminuswidth(18)
+   checkloading.calculateminuswidth(18, 1)
    smallLoader.style.width = checkloading.isloading + 'px'
    smallLoader1.style.width = checkloading.isloading + 'px'
+
+   
+ mobilecount.innerText = checkloading.count
+ mobilecount1.innerText = checkloading.count
 
 })
 
@@ -572,9 +633,15 @@ laptopgoodDiv1.addEventListener('click' , () => {
 
  
     
-   laptopcheckloading.calculateminuswidth(18)
+   laptopcheckloading.calculateminuswidth(18, 1)
    laptopsmallLoader.style.width = laptopcheckloading.isloading + 'px'
    laptopsmallLoader1.style.width = laptopcheckloading.isloading + 'px'
+
+
+
+   
+ laptopsmall1.innerText = laptopcheckloading.count
+ laptopsmall.innerText = laptopcheckloading.count
 
 })
 
@@ -601,9 +668,13 @@ goodDiv2.addEventListener('click' , () => {
 
     
 
-     checkloading.calculateminuswidth(18)
+     checkloading.calculateminuswidth(18, 1)
      smallLoader.style.width = checkloading.isloading + 'px'
      smallLoader1.style.width = checkloading.isloading + 'px'
+
+     
+ mobilecount.innerText = checkloading.count
+ mobilecount1.innerText = checkloading.count
 
 })
 
@@ -625,9 +696,16 @@ laptopgoodDiv2.addEventListener('click' , () => {
 
     
 
-     laptopcheckloading.calculateminuswidth(18)
+     laptopcheckloading.calculateminuswidth(18, 1)
      laptopsmallLoader.style.width = laptopcheckloading.isloading + 'px'
      laptopsmallLoader1.style.width = laptopcheckloading.isloading + 'px'
+
+
+
+
+     
+ laptopsmall1.innerText = laptopcheckloading.count
+ laptopsmall.innerText = laptopcheckloading.count
 
 })
 
@@ -654,9 +732,13 @@ goodDiv3.addEventListener('click' , () => {
 
 
     
-   checkloading.calculateminuswidth(18)
+   checkloading.calculateminuswidth(18, 1)
    smallLoader.style.width = checkloading.isloading + 'px'
    smallLoader1.style.width = checkloading.isloading + 'px'
+
+   
+ mobilecount.innerText = checkloading.count
+ mobilecount1.innerText = checkloading.count
  
 
 
@@ -680,11 +762,15 @@ laptopgoodDiv3.addEventListener('click' , () => {
 
 
     
-   laptopcheckloading.calculateminuswidth(18)
+   laptopcheckloading.calculateminuswidth(18, 1)
    laptopsmallLoader.style.width = laptopcheckloading.isloading + 'px'
    laptopsmallLoader1.style.width = laptopcheckloading.isloading + 'px'
  
 
+
+   
+ laptopsmall1.innerText = laptopcheckloading.count
+ laptopsmall.innerText = laptopcheckloading.count
 
 })
 
@@ -709,9 +795,13 @@ goodDiv4.addEventListener('click' , () => {
 
     
 
-     checkloading.calculateminuswidth(18)
+     checkloading.calculateminuswidth(18, 1)
      smallLoader.style.width = checkloading.isloading + 'px'
      smallLoader1.style.width = checkloading.isloading + 'px'
+
+     
+ mobilecount.innerText = checkloading.count
+ mobilecount1.innerText = checkloading.count
 
 })
 
@@ -733,9 +823,15 @@ laptopgoodDiv4.addEventListener('click' , () => {
 
     
 
-     laptopcheckloading.calculateminuswidth(18)
+     laptopcheckloading.calculateminuswidth(18, 1)
      laptopsmallLoader.style.width = laptopcheckloading.isloading + 'px'
      laptopsmallLoader1.style.width = laptopcheckloading.isloading + 'px'
+
+
+
+     
+ laptopsmall1.innerText = laptopcheckloading.count
+ laptopsmall.innerText = laptopcheckloading.count
 
 })
 
@@ -760,10 +856,17 @@ goodDiv5.addEventListener('click' , () => {
      }
 
  
-     checkloading.calculateminuswidth(18)
+     checkloading.calculateminuswidth(18, 1)
      smallLoader.style.width = checkloading.isloading + 'px'
      smallLoader1.style.width = checkloading.isloading + 'px'
+
+     
+ mobilecount.innerText = checkloading.count
+ mobilecount1.innerText = checkloading.count
  
+
+
+
 
 })
 
@@ -783,11 +886,15 @@ laptopgoodDiv5.addEventListener('click' , () => {
      }
 
  
-     laptopcheckloading.calculateminuswidth(18)
+     laptopcheckloading.calculateminuswidth(18,1)
      laptopsmallLoader.style.width = laptopcheckloading.isloading + 'px'
      laptopsmallLoader1.style.width = laptopcheckloading.isloading + 'px'
  
 
+
+     
+ laptopsmall1.innerText = laptopcheckloading.count
+ laptopsmall.innerText = laptopcheckloading.count
 })
 
 
@@ -911,12 +1018,93 @@ laptopSection.addEventListener('click', () => {
  })
 
  
-laptopSection.addEventListener('click', () => {
-  console.log('hi')
+
+
+laptopvmp1.addEventListener('keydown', (ev) => {
+ 
+  let stylegood2 = window.getComputedStyle(laptopcmp2Good)
+  
+  let stylegood3 = window.getComputedStyle(laptopcmp3Good)
+  
+  let stylegood4 = window.getComputedStyle(laptopcmp4Good)
+  
+  let stylegood5 = window.getComputedStyle(laptopcmp5Good)
+  
+ 
+  
+  let Stylevmp1 = window.getComputedStyle(laptopvmp1)
+   
+ 
+
+
+  if (ev.key === 'ArrowDown'){
+
+  if(Stylevmp1.display === 'flex'){
+   laptopvmp1.style.display = 'none'
+
+  }
+
+  if(Stylevmp1.display === 'none'){
+   laptopcmp1.style.display = 'block';
+    laptoprotateCon2.style.display = 'none'
+   
+    laptopvmpDot2.style.display = 'none'
+    
+    laptopvmp2.style.display = 'flex';
+  
+    laptopcmp2.style.display = 'none';
+
+  }
+
+  if (stylegood2.display === 'block'){
+   laptopgoodDiv2.style.display = 'block'
+ }
+
+ if (styleDot2.display === 'block'){
+   laptopvmpDot2.style.display = 'block'
+ }
+
+
+
+  }
+
+
+ 
+
 })
 
 
 
+
+
+/*if(ev.key === 'ArrowDown'){
+  if(Stylevmp2.display === 'flex'){
+    laptopvmp2.style.display = 'none'
+ 
+   }
+ 
+ 
+ 
+   if(Stylevmp2.display === 'none'){
+    laptopcmp2.style.display = 'block';
+     laptoprotateCon3.style.display = 'none'
+    
+     laptopvmpDot3.style.display = 'none'
+     
+     laptopvmp3.style.display = 'flex';
+   
+     laptopcmp3.style.display = 'none';
+ 
+   }
+ 
+   if (stylegood3.display === 'block'){
+    laptopgoodDiv3.style.display = 'block'
+  }
+ 
+  if (styleDot3.display === 'block'){
+    laptopvmpDot3.style.display = 'block'
+  }
+}*/
 
 
 
@@ -1060,9 +1248,14 @@ let Stylevmp1 = window.getComputedStyle(vmp1)
  }, 300);
 
 
- checkloading.calculatewidth(18)
+ checkloading.calculatewidth(18,1)
  smallLoader.style.width = checkloading.isloading  + 'px'
- smallLoader1.style.width = checkloading.isloading    + 'px'
+ smallLoader1.style.width = checkloading.isloading   + 'px'
+
+
+
+ mobilecount.innerText = checkloading.count
+ mobilecount1.innerText = checkloading.count
 
  })
 
@@ -1104,14 +1297,16 @@ let Stylevmp1 = window.getComputedStyle(laptopvmp1)
  }, 300);
 
 
- laptopcheckloading.calculatewidth(18)
+ laptopcheckloading.calculatewidth(18,1)
  laptopsmallLoader.style.width = laptopcheckloading.isloading  + 'px'
  laptopsmallLoader1.style.width = laptopcheckloading.isloading    + 'px'
 
 
+ laptopsmall1.innerText = laptopcheckloading.count
+ laptopsmall.innerText = laptopcheckloading.count
 
 
- laptopsmall.increment.textcontent = counter
+ 
  })
 
 
@@ -1157,9 +1352,13 @@ let Stylevmp2 = window.getComputedStyle(vmp2)
 
 
 
- laptopcheckloading.calculatewidth(18)
+ checkloading.calculatewidth(18,1)
  smallLoader.style.width = checkloading.isloading + 'px'
  smallLoader1.style.width = checkloading.isloading + 'px'
+
+
+ mobilecount.innerText = checkloading.count
+ mobilecount1.innerText = checkloading.count
  })
 
 
@@ -1203,9 +1402,13 @@ let Stylevmp2 = window.getComputedStyle(laptopvmp2)
 
 
 
- laptopcheckloading.calculatewidth(18)
+ laptopcheckloading.calculatewidth(18,1)
  laptopsmallLoader.style.width = laptopcheckloading.isloading + 'px'
  laptopsmallLoader1.style.width = laptopcheckloading.isloading + 'px'
+
+ 
+ laptopsmall1.innerText = laptopcheckloading.count
+ laptopsmall.innerText = laptopcheckloading.count
  })
 
 
@@ -1215,6 +1418,14 @@ let Stylevmp2 = window.getComputedStyle(laptopvmp2)
  let stylevmpDot3 = window.getComputedStyle(vmpDot3)
 let stylerotate3 = window.getComputedStyle(rotateCon3)
 let Stylevmp3 = window.getComputedStyle(vmp3)
+
+
+checkloading.calculatewidth(18,1)
+  smallLoader.style.width = checkloading.isloading + 'px'
+ smallLoader1.style.width = checkloading.isloading + 'px'
+
+ mobilecount.innerText = checkloading.count
+ mobilecount1.innerText = checkloading.count
 
 
    if(stylevmpDot3.display === 'block'){
@@ -1244,9 +1455,7 @@ let Stylevmp3 = window.getComputedStyle(vmp3)
  }, 300);
 
 
- checkloading.calculatewidth(18)
-  smallLoader.style.width = checkloading.isloading + 'px'
- smallLoader1.style.width = checkloading.isloading + 'px'
+ 
 
  })
 
@@ -1260,6 +1469,10 @@ let Stylevmp3 = window.getComputedStyle(vmp3)
  let Stylevmp2 = window.getComputedStyle(laptopvmp3)
  
  
+
+
+
+
     if(stylevmpDot2.display === 'block'){
      laptopvmpDot3.style.display = 'none'
     }
@@ -1287,10 +1500,17 @@ let Stylevmp3 = window.getComputedStyle(vmp3)
   }, 300);
  
  
- 
-  laptopcheckloading.calculatewidth(18)
+
+
+  laptopcheckloading.calculatewidth(18, 1)
   laptopsmallLoader.style.width = laptopcheckloading.isloading + 'px'
   laptopsmallLoader1.style.width = laptopcheckloading.isloading + 'px'
+ 
+  
+ laptopsmall1.innerText = laptopcheckloading.count
+ laptopsmall.innerText = laptopcheckloading.count
+ 
+
   })
 
 
@@ -1334,9 +1554,15 @@ let Stylevmp4 = window.getComputedStyle(vmp4)
 
 
 
- checkloading.calculatewidth(18)
+ checkloading.calculatewidth(18,1)
  smallLoader.style.width = checkloading.isloading + 'px'
  smallLoader1.style.width = checkloading.isloading + 'px'
+
+
+ 
+ mobilecount.innerText = checkloading.count
+ mobilecount1.innerText = checkloading.count
+ 
  })
 
 
@@ -1349,6 +1575,18 @@ let Stylevmp4 = window.getComputedStyle(vmp4)
  let Stylevmp2 = window.getComputedStyle(laptopvmp4)
  
  
+
+ laptopcheckloading.calculatewidth(18,1)
+ laptopsmallLoader.style.width = laptopcheckloading.isloading + 'px'
+ laptopsmallLoader1.style.width = laptopcheckloading.isloading + 'px'
+
+ 
+laptopsmall1.innerText = laptopcheckloading.count
+laptopsmall.innerText = laptopcheckloading.count
+
+
+
+
     if(stylevmpDot2.display === 'block'){
      laptopvmpDot4.style.display = 'none'
     }
@@ -1377,9 +1615,6 @@ let Stylevmp4 = window.getComputedStyle(vmp4)
  
  
  
-  laptopcheckloading.calculatewidth(18)
-  laptopsmallLoader.style.width = laptopcheckloading.isloading + 'px'
-  laptopsmallLoader1.style.width = laptopcheckloading.isloading + 'px'
   })
 
 
@@ -1421,9 +1656,15 @@ let Stylevmp5 = window.getComputedStyle(vmp5)
 
 
 
- checkloading.calculatewidth(18)
+ checkloading.calculatewidth(18,1)
  smallLoader.style.width = checkloading.isloading + 'px'
  smallLoader1.style.width = checkloading.isloading + 'px'
+
+
+
+ 
+ mobilecount.innerText = checkloading.count
+ mobilecount1.innerText = checkloading.count
  })
 
 
@@ -1434,6 +1675,17 @@ let Stylevmp5 = window.getComputedStyle(vmp5)
  let stylerotate2 = window.getComputedStyle(laptoprotateCon5)
  let Stylevmp2 = window.getComputedStyle(laptopvmp5)
  
+
+
+ laptopcheckloading.calculatewidth(18,1)
+ laptopsmallLoader.style.width = laptopcheckloading.isloading + 'px'
+ laptopsmallLoader1.style.width = laptopcheckloading.isloading + 'px'
+
+
+ 
+laptopsmall1.innerText = laptopcheckloading.count
+laptopsmall.innerText = laptopcheckloading.count
+
  
     if(stylevmpDot2.display === 'block'){
      laptopvmpDot5.style.display = 'none'
@@ -1461,11 +1713,9 @@ let Stylevmp5 = window.getComputedStyle(vmp5)
   
   }, 300);
  
- console.log('ooops')
  
-  laptopcheckloading.calculatewidth(18)
-  laptopsmallLoader.style.width = laptopcheckloading.isloading + 'px'
-  laptopsmallLoader1.style.width = laptopcheckloading.isloading + 'px'
+ 
+
   })
 
 
@@ -1983,9 +2233,13 @@ let Stylevmp5 = window.getComputedStyle(vmp5)
  
  }, 300);
 
- checkloading.calculatewidth(18)
+ checkloading.calculatewidth(18, 1)
  smallLoader.style.width = checkloading.isloading + 'px'
  smallLoader1.style.width = checkloading.isloading + 'px'
+
+ 
+ mobilecount.innerText = checkloading.count
+ mobilecount1.innerText = checkloading.count
 
 })
 
@@ -2045,9 +2299,15 @@ let Stylevmp5 = window.getComputedStyle(vmp5)
  
  }, 300);
 
- laptopcheckloading.calculatewidth(18)
+ laptopcheckloading.calculatewidth(18, 1)
  laptopsmallLoader.style.width = laptopcheckloading.isloading + 'px'
  laptopsmallLoader1.style.width =  laptopcheckloading.isloading + 'px'
+
+
+
+ 
+ laptopsmall1.innerText = laptopcheckloading.count
+ laptopsmall.innerText = laptopcheckloading.count
 
 })
 
@@ -2105,9 +2365,14 @@ setTimeout(() => {
 
  },300);
 
- checkloading.calculatewidth(18)
+ checkloading.calculatewidth(18, 1)
  smallLoader.style.width = checkloading.isloading + 'px'
  smallLoader1.style.width = checkloading.isloading + 'px'
+
+
+ 
+ mobilecount.innerText = checkloading.count
+ mobilecount1.innerText = checkloading.count
 
  })
 
@@ -2166,10 +2431,16 @@ setTimeout(() => {
 
 }, 300);
 
-laptopcheckloading.calculatewidth(18)
+laptopcheckloading.calculatewidth(18, 1)
 laptopsmallLoader.style.width = laptopcheckloading.isloading + 'px'
 laptopsmallLoader1.style.width = laptopcheckloading.isloading + 'px'
 
+
+
+
+
+laptopsmall1.innerText = laptopcheckloading.count
+laptopsmall.innerText = laptopcheckloading.count
 })
 
 
@@ -2234,9 +2505,14 @@ laptopsmallLoader1.style.width = laptopcheckloading.isloading + 'px'
 
  },300);
  
- checkloading.calculatewidth(18)
+ checkloading.calculatewidth(18, 1)
  smallLoader.style.width = checkloading.isloading + 'px'
  smallLoader1.style.width = checkloading.isloading + 'px'
+
+
+ 
+ mobilecount.innerText = checkloading.count
+ mobilecount1.innerText = checkloading.count
 
  })
 
@@ -2297,9 +2573,17 @@ setTimeout(() => {
 
 }, 300);
 
-laptopcheckloading.calculatewidth(18)
+laptopcheckloading.calculatewidth(18, 1)
 laptopsmallLoader.style.width = laptopcheckloading.isloading + 'px'
 laptopsmallLoader1.style.width = laptopcheckloading.isloading + 'px'
+
+
+
+
+
+
+laptopsmall1.innerText = laptopcheckloading.count
+laptopsmall.innerText = laptopcheckloading.count
 
 })
 
@@ -2357,9 +2641,13 @@ laptopsmallLoader1.style.width = laptopcheckloading.isloading + 'px'
 
  },300);
  
- checkloading.calculatewidth(18)
+ checkloading.calculatewidth(18,1)
  smallLoader.style.width = checkloading.isloading + 'px'
  smallLoader1.style.width = checkloading.isloading + 'px'
+
+ 
+ mobilecount.innerText = checkloading.count
+ mobilecount1.innerText = checkloading.count
 
  })
 
@@ -2425,12 +2713,16 @@ setTimeout(() => {
 }, 300);
 
 
-laptopcheckloading.calculatewidth(18)
+laptopcheckloading.calculatewidth(18, 1)
 laptopsmallLoader.style.width = laptopcheckloading.isloading + 'px'
 laptopsmallLoader1.style.width = laptopcheckloading.isloading + 'px'
 
 
  
+
+
+laptopsmall1.innerText = laptopcheckloading.count
+laptopsmall.innerText = laptopcheckloading.count
 })
 
 
@@ -2470,6 +2762,8 @@ laptopsmallLoader1.style.width = laptopcheckloading.isloading + 'px'
   }
 
 
+
+
   
   setTimeout(() => {
     if (stylerotate5.display === 'block'){
@@ -2485,9 +2779,14 @@ laptopsmallLoader1.style.width = laptopcheckloading.isloading + 'px'
 
  },300);
  
- checkloading.calculatewidth(18)
+ checkloading.calculatewidth(18,1)
  smallLoader.style.width = checkloading.isloading + 'px'
  smallLoader1.style.width = checkloading.isloading + 'px'
+
+
+ 
+ mobilecount.innerText = checkloading.count
+ mobilecount1.innerText = checkloading.count
 
 
 
@@ -2551,11 +2850,15 @@ setTimeout(() => {
 }, 300);
 
 
-laptopcheckloading.calculatewidth(18)
+laptopcheckloading.calculatewidth(18, 1)
 laptopsmallLoader.style.width = laptopcheckloading.isloading + 'px'
 laptopsmallLoader1.style.width = laptopcheckloading.isloading + 'px'
 
 
+
+
+laptopsmall1.innerText = laptopcheckloading.count
+laptopsmall.innerText = laptopcheckloading.count
 
 
 })
