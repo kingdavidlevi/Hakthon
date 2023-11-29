@@ -65,7 +65,7 @@ let mobileAlert = document.getElementById('mobile-white')
 let mobileNotification = document.getElementById('mobile-dc-notification')
 let mobileDc = document.getElementById('dc')
 let mobilebell = document.getElementById('bell')
-
+let mmm = document.getElementById('mobile-div')
 
 
 
@@ -127,6 +127,9 @@ let laptopAlert = document.getElementById('laptop-Alert')
 let laptopNotification = document.getElementById('laptop-dc-notification')
 let Davii = document.getElementById('laptop-dd')
 let LaptopBell = document.getElementById('laptop-icon')
+let mm1 = document.getElementById('laptop-div')
+let toggle = document.getElementById('laptop-toggle')
+let laptopsmall = document.getElementById('small')
 
 
 
@@ -169,9 +172,11 @@ const  laptopcheckloading = {
   }
 
 
-
-
  }
+
+ 
+ 
+
 
 
  mobileDc.addEventListener('click', () => {
@@ -205,7 +210,7 @@ laptopAlert.style.display = 'none'
 
 
 else{
-  laptopAlert.style.display = 'none'
+  laptopNotification.style.display = 'none'
 }
  
 
@@ -213,6 +218,8 @@ else{
   
 
  })
+
+
  LaptopBell.addEventListener('click', () => {
 let stylenotify = window.getComputedStyle(laptopAlert)
 laptopNotification.style.display = 'none'
@@ -226,7 +233,7 @@ laptopNotification.style.display = 'none'
 
 
 else{
-  laptopNotification.style.display = 'none'
+  laptopAlert.style.display = 'none'
 }
  
 
@@ -287,6 +294,9 @@ let stylcmp1Good = window.getComputedStyle(cmp1Good)
  })
 
  
+
+
+
 
 
  laptopcmp1Good.addEventListener('click' , () => {
@@ -360,7 +370,7 @@ let stylcmp2Good = window.getComputedStyle(laptopcmp2Good)
    }
 
    
-   checkloading.calculateminuswidth(18)
+   laptopcheckloading.calculateminuswidth(18)
    laptopsmallLoader.style.width = laptopcheckloading.isloading + 'px'
    laptopsmallLoader1.style.width = laptopcheckloading.isloading + 'px'
     
@@ -412,9 +422,9 @@ let stylcmp3Good = window.getComputedStyle(laptopcmp3Good)
    }
    
    
-   checkloading.calculateminuswidth(18)
-   laptopsmallLoader.style.width = checkloading.isloading + 'px'
-   laptopsmallLoader1.style.width = checkloading.isloading + 'px'
+   laptopcheckloading.calculateminuswidth(18)
+   laptopsmallLoader.style.width = laptopcheckloading.isloading + 'px'
+   laptopsmallLoader1.style.width = laptopcheckloading.isloading + 'px'
 
  })
 
@@ -460,9 +470,9 @@ let stylcmp4Good = window.getComputedStyle(laptopcmp4Good)
     laptopvmpDot4.style.display = 'block'
    }
    
-   checkloading.calculateminuswidth(18)
-   laptopsmallLoader.style.width = checkloading.isloading + 'px'
-   laptopsmallLoader1.style.width = checkloading.isloading + 'px'
+   laptopcheckloading.calculateminuswidth(18)
+   laptopsmallLoader.style.width = laptopcheckloading.isloading + 'px'
+   laptopsmallLoader1.style.width = laptopcheckloading.isloading + 'px'
 
  })
 
@@ -508,9 +518,9 @@ let stylcmp5Good = window.getComputedStyle(laptopcmp5Good)
     laptopvmpDot5.style.display = 'block'
    }
    
-   checkloading.calculateminuswidth(18)
-   laptopsmallLoader.style.width = checkloading.isloading + 'px'
-   laptopsmallLoader1.style.width = checkloading.isloading + 'px'
+   laptopcheckloading.calculateminuswidth(18)
+   laptopsmallLoader.style.width = laptopcheckloading.isloading + 'px'
+   laptopsmallLoader1.style.width = laptopcheckloading.isloading + 'px'
 
  })
 
@@ -562,7 +572,7 @@ laptopgoodDiv1.addEventListener('click' , () => {
 
  
     
-   checkloading.calculateminuswidth(18)
+   laptopcheckloading.calculateminuswidth(18)
    laptopsmallLoader.style.width = laptopcheckloading.isloading + 'px'
    laptopsmallLoader1.style.width = laptopcheckloading.isloading + 'px'
 
@@ -615,9 +625,9 @@ laptopgoodDiv2.addEventListener('click' , () => {
 
     
 
-     checkloading.calculateminuswidth(18)
-     laptopsmallLoader.style.width = checkloading.isloading + 'px'
-     laptopsmallLoader1.style.width = checkloading.isloading + 'px'
+     laptopcheckloading.calculateminuswidth(18)
+     laptopsmallLoader.style.width = laptopcheckloading.isloading + 'px'
+     laptopsmallLoader1.style.width = laptopcheckloading.isloading + 'px'
 
 })
 
@@ -670,9 +680,9 @@ laptopgoodDiv3.addEventListener('click' , () => {
 
 
     
-   checkloading.calculateminuswidth(18)
-   laptopsmallLoader.style.width = checkloading.isloading + 'px'
-   laptopsmallLoader1.style.width = checkloading.isloading + 'px'
+   laptopcheckloading.calculateminuswidth(18)
+   laptopsmallLoader.style.width = laptopcheckloading.isloading + 'px'
+   laptopsmallLoader1.style.width = laptopcheckloading.isloading + 'px'
  
 
 
@@ -723,9 +733,9 @@ laptopgoodDiv4.addEventListener('click' , () => {
 
     
 
-     checkloading.calculateminuswidth(18)
-     laptopsmallLoader.style.width = checkloading.isloading + 'px'
-     laptopsmallLoader1.style.width = checkloading.isloading + 'px'
+     laptopcheckloading.calculateminuswidth(18)
+     laptopsmallLoader.style.width = laptopcheckloading.isloading + 'px'
+     laptopsmallLoader1.style.width = laptopcheckloading.isloading + 'px'
 
 })
 
@@ -773,9 +783,9 @@ laptopgoodDiv5.addEventListener('click' , () => {
      }
 
  
-     checkloading.calculateminuswidth(18)
-     laptopsmallLoader.style.width = checkloading.isloading + 'px'
-     laptopsmallLoader1.style.width = checkloading.isloading + 'px'
+     laptopcheckloading.calculateminuswidth(18)
+     laptopsmallLoader.style.width = laptopcheckloading.isloading + 'px'
+     laptopsmallLoader1.style.width = laptopcheckloading.isloading + 'px'
  
 
 })
@@ -838,6 +848,76 @@ laptophideArrow.addEventListener('click', () => {
    }
 
  })
+
+
+
+
+
+
+ laptopSection.addEventListener('keydown', (ev) => {
+
+
+
+  if(ev.key === 'Enter'){
+    laptopSection.style.display = 'none'
+    laptopSection1.style.display = 'grid'
+  }
+
+
+ 
+ })
+
+  
+
+
+
+laptopSection.addEventListener('click', () => {
+
+  laptopAlert.style.display = 'none'
+
+})
+
+
+ laptopSection1.addEventListener('keydown', (ev) => {
+
+
+
+  if(ev.key === 'Escape'){
+    laptopSection1.style.display = 'none'
+    laptopSection.style.display = 'grid'
+  }
+ 
+ })
+
+
+
+
+
+
+
+ 
+ 
+
+ laptopSection.addEventListener('keydown', (ev) => {
+
+
+
+  if(ev.key === 'Enter'){
+    laptopSection.style.display = 'none'
+    laptopSection1.style.display = 'grid'
+  }
+
+ 
+ })
+
+ 
+laptopSection.addEventListener('click', () => {
+  console.log('hi')
+})
+
+
+
+
 
 
  laptoparrow.addEventListener('click', () => {
@@ -1017,7 +1097,7 @@ let Stylevmp1 = window.getComputedStyle(laptopvmp1)
    
  
  setTimeout(() => {
-  if(Stylevmp1.display === 'block') {  
+  if(stylerotate1.display === 'none') {  
    laptopgoodDiv1.style.display = 'block'
   }
  
@@ -1025,9 +1105,13 @@ let Stylevmp1 = window.getComputedStyle(laptopvmp1)
 
 
  laptopcheckloading.calculatewidth(18)
- laptopsmallLoader.style.width = checkloading.isloading  + 'px'
- laptopsmallLoader1.style.width = checkloading.isloading    + 'px'
+ laptopsmallLoader.style.width = laptopcheckloading.isloading  + 'px'
+ laptopsmallLoader1.style.width = laptopcheckloading.isloading    + 'px'
 
+
+
+
+ laptopsmall.increment.textcontent = counter
  })
 
 
@@ -1111,7 +1195,7 @@ let Stylevmp2 = window.getComputedStyle(laptopvmp2)
    
  
  setTimeout(() => {
-  if(Stylevmp2.display === 'block') {  
+  if(stylerotate2.display === 'none') {  
    laptopgoodDiv2.style.display = 'block'
   }
  
@@ -1120,8 +1204,8 @@ let Stylevmp2 = window.getComputedStyle(laptopvmp2)
 
 
  laptopcheckloading.calculatewidth(18)
- laptopsmallLoader.style.width = checkloading.isloading + 'px'
- laptopsmallLoader1.style.width = checkloading.isloading + 'px'
+ laptopsmallLoader.style.width = laptopcheckloading.isloading + 'px'
+ laptopsmallLoader1.style.width = laptopcheckloading.isloading + 'px'
  })
 
 
@@ -1196,7 +1280,7 @@ let Stylevmp3 = window.getComputedStyle(vmp3)
     
   
   setTimeout(() => {
-   if(Stylevmp2.display === 'block') {  
+   if( stylerotate2.display === 'none') {  
     laptopgoodDiv3.style.display = 'block'
    }
   
@@ -1205,9 +1289,13 @@ let Stylevmp3 = window.getComputedStyle(vmp3)
  
  
   laptopcheckloading.calculatewidth(18)
-  laptopsmallLoader.style.width = checkloading.isloading + 'px'
-  laptopsmallLoader1.style.width = checkloading.isloading + 'px'
+  laptopsmallLoader.style.width = laptopcheckloading.isloading + 'px'
+  laptopsmallLoader1.style.width = laptopcheckloading.isloading + 'px'
   })
+
+
+
+
 
 
 
@@ -1238,7 +1326,7 @@ let Stylevmp4 = window.getComputedStyle(vmp4)
    
  
  setTimeout(() => {
-  if(Stylevmp4.display === 'block') {  
+  if( Stylevmp4.display === 'block') {  
    goodDiv4.style.display = 'block'
   }
  
@@ -1281,7 +1369,7 @@ let Stylevmp4 = window.getComputedStyle(vmp4)
     
   
   setTimeout(() => {
-   if(Stylevmp2.display === 'block') {  
+   if( stylerotate2.display === 'none') {  
     laptopgoodDiv4.style.display = 'block'
    }
   
@@ -1290,8 +1378,8 @@ let Stylevmp4 = window.getComputedStyle(vmp4)
  
  
   laptopcheckloading.calculatewidth(18)
-  laptopsmallLoader.style.width = checkloading.isloading + 'px'
-  laptopsmallLoader1.style.width = checkloading.isloading + 'px'
+  laptopsmallLoader.style.width = laptopcheckloading.isloading + 'px'
+  laptopsmallLoader1.style.width = laptopcheckloading.isloading + 'px'
   })
 
 
@@ -1367,7 +1455,7 @@ let Stylevmp5 = window.getComputedStyle(vmp5)
     
   
   setTimeout(() => {
-   if(Stylevmp2.display === 'block') {  
+   if( stylerotate2.display === 'none') {  
     laptopgoodDiv5.style.display = 'block'
    }
   
@@ -1376,8 +1464,8 @@ let Stylevmp5 = window.getComputedStyle(vmp5)
  console.log('ooops')
  
   laptopcheckloading.calculatewidth(18)
-  laptopsmallLoader.style.width = checkloading.isloading + 'px'
-  laptopsmallLoader1.style.width = checkloading.isloading + 'px'
+  laptopsmallLoader.style.width = laptopcheckloading.isloading + 'px'
+  laptopsmallLoader1.style.width = laptopcheckloading.isloading + 'px'
   })
 
 
@@ -1958,8 +2046,8 @@ let Stylevmp5 = window.getComputedStyle(vmp5)
  }, 300);
 
  laptopcheckloading.calculatewidth(18)
- laptopsmallLoader.style.width = checkloading.isloading + 'px'
- laptopsmallLoader1.style.width = checkloading.isloading + 'px'
+ laptopsmallLoader.style.width = laptopcheckloading.isloading + 'px'
+ laptopsmallLoader1.style.width =  laptopcheckloading.isloading + 'px'
 
 })
 
@@ -2079,8 +2167,8 @@ setTimeout(() => {
 }, 300);
 
 laptopcheckloading.calculatewidth(18)
-laptopsmallLoader.style.width = checkloading.isloading + 'px'
-laptopsmallLoader1.style.width = checkloading.isloading + 'px'
+laptopsmallLoader.style.width = laptopcheckloading.isloading + 'px'
+laptopsmallLoader1.style.width = laptopcheckloading.isloading + 'px'
 
 })
 
@@ -2210,8 +2298,8 @@ setTimeout(() => {
 }, 300);
 
 laptopcheckloading.calculatewidth(18)
-laptopsmallLoader.style.width = checkloading.isloading + 'px'
-laptopsmallLoader1.style.width = checkloading.isloading + 'px'
+laptopsmallLoader.style.width = laptopcheckloading.isloading + 'px'
+laptopsmallLoader1.style.width = laptopcheckloading.isloading + 'px'
 
 })
 
@@ -2297,14 +2385,15 @@ laptopsmallLoader1.style.width = checkloading.isloading + 'px'
  }
 
  if(Stylecmp1.display === 'none'){
-   laptopvmp4.style.display = 'block';
-    
+   laptopvmp4.style.display = 'flex';
+
+   laptopvmpDot4.style.display = 'none'
    laptopcmp4Good.style.display = 'block'
    laptopgoodDiv4.style.display = 'none'
    laptopdot4.style.display = 'none'
-   laptoprotateCon4.style.display = 'none'
+   laptoprotateCon4.style.display = 'block'
   
-   laptopvmpDot4.style.display = 'none'
+   
   
    laptopvmp2.style.display = 'none';
    laptopvmp1.style.display = 'none';
@@ -2323,7 +2412,7 @@ laptopsmallLoader1.style.width = checkloading.isloading + 'px'
 
  setTimeout(() => {
    if (stylerotate1.display === 'block'){
-    laptoprotateCon4.style.display = 'block'
+    laptoprotateCon4.style.display = 'none'
   }
 },300);
   
@@ -2334,6 +2423,7 @@ setTimeout(() => {
  }
 
 }, 300);
+
 
 laptopcheckloading.calculatewidth(18)
 laptopsmallLoader.style.width = laptopcheckloading.isloading + 'px'
@@ -2405,7 +2495,80 @@ laptopsmallLoader1.style.width = laptopcheckloading.isloading + 'px'
 
 
 
+
+ laptopdot5.addEventListener('click', () => {
+ 
+  let stylegood1 = window.getComputedStyle(laptopcmp5Good)
+ let Stylecmp1 = window.getComputedStyle(laptopcmp5)
+ let Stylevmp4 = window.getComputedStyle(laptopvmp5)
+ 
+ let stylerotate1 = window.getComputedStyle(laptoprotateCon5)
+
+
+ if(Stylecmp1.display === 'block'){
+   laptopcmp5.style.display = 'none'
+
+ }
+
+ if(Stylecmp1.display === 'none'){
+   laptopvmp5.style.display = 'flex';
+
+   laptopvmpDot5.style.display = 'none'
+   laptopcmp5Good.style.display = 'block'
+   laptopgoodDiv5.style.display = 'none'
+   laptopdot5.style.display = 'none'
+   laptoprotateCon5.style.display = 'block'
+  
+   
+  
+   laptopvmp2.style.display = 'none';
+   laptopvmp1.style.display = 'none';
+
+   laptopvmp3.style.display = 'none';
+   laptopvmp4.style.display = 'none';
+
+   laptopcmp1.style.display = 'block';
+   laptopcmp2.style.display = 'block';
+   laptopcmp3.style.display = 'block';
+   laptopcmp4.style.display = 'block';
+
+
+ }
+
+
+ setTimeout(() => {
+   if (stylerotate1.display === 'block'){
+    laptoprotateCon5.style.display = 'none'
+  }
+},300);
+  
+
+setTimeout(() => {
+ if(Stylevmp4.display === 'flex') {  
+   laptopgoodDiv5.style.display = 'block'
+ }
+
+}, 300);
+
+
+laptopcheckloading.calculatewidth(18)
+laptopsmallLoader.style.width = laptopcheckloading.isloading + 'px'
+laptopsmallLoader1.style.width = laptopcheckloading.isloading + 'px'
+
+
+
+
 })
+
+
+
+})
+
+
+
+
+
+ 
 
 
 

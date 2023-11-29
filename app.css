@@ -1539,12 +1539,12 @@ justify-content: space-between;
           cursor: pointer;
        }
       
-       #mobile-toggle:active{
-        outline: 2px solid #005bd3;
+       #laptop-toggle:active{
+        border: 2px solid #005bd3;
        }
       
-       #mobile-toggle:focus{
-      outline: 2px solid #005bd3;
+       #laptop-toggle:focus{
+      border: 2px solid #005bd3;
        }
       
        .i{
@@ -2737,7 +2737,7 @@ border-radius:28px ;
     display: grid;
     justify-content: center;
     margin-top: 88px;
-    
+    outline: none;
     
 }
 
@@ -2747,7 +2747,7 @@ border-radius:28px ;
     justify-content: center;
     display: none;
     margin-top: 88px;
-    
+    outline: none;
 }
 
 #laptop-overall1 {
